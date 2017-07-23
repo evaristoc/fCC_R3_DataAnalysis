@@ -1,24 +1,24 @@
 #!/usr/bin/env python3
-#from chatroom_analysis/cr_analysis.py
-import os, sys
-import copy, operator, collections, itertools, re
-import urllib, urllib.request, urllib.parse
-#from urllib.parse import urlparse, urljoin
-from urllib import robotparser
-import requests
-import json, pickle, csv
-#from datetime import datetime, date, timedelta
-import datetime
-import math
-from bs4 import BeautifulSoup
-import nltk
-nltk.data.path.append(config.anacondadir+'nltk_data') #a required hack in my case
-
-
-usual_stopwords = nltk.corpus.stopwords.words('english')
-other_words = ["re", "fm", "tv", "la", "al", "ben", "aq", "ca", "can", "can'", "can't", "cant", "&"]
-punctuation = ["\\","/", "|","(",")",".",",",":","=","{","}","==", "===","[","]","+","++","-","--","_","<",">","'","''","``",'"',"!","!=","?",";"]
-wtbr = usual_stopwords + other_words + punctuation
+# #from chatroom_analysis/cr_analysis.py
+# import os, sys
+# import copy, operator, collections, itertools, re
+# import urllib, urllib.request, urllib.parse
+# #from urllib.parse import urlparse, urljoin
+# from urllib import robotparser
+# import requests
+# import json, pickle, csv
+# #from datetime import datetime, date, timedelta
+# import datetime
+# import math
+# from bs4 import BeautifulSoup
+# import nltk
+# #nltk.data.path.append(config.anacondadir+'nltk_data') #a required hack in my case
+# 
+# 
+# usual_stopwords = nltk.corpus.stopwords.words('english')
+# other_words = ["re", "fm", "tv", "la", "al", "ben", "aq", "ca", "can", "can'", "can't", "cant", "&"]
+# punctuation = ["\\","/", "|","(",")",".",",",":","=","{","}","==", "===","[","]","+","++","-","--","_","<",">","'","''","``",'"',"!","!=","?",";"]
+# wtbr = usual_stopwords + other_words + punctuation
 
 def cv():
     '''
@@ -662,63 +662,63 @@ def html_tests(subject):
 
 
 
-#########################################
-##MAIN
-#########################################
-
-if __name__ == "__main__":
-    #https://stackoverflow.com/questions/423379/using-global-variables-in-a-function-other-than-the-one-that-created-them
-    
-    ####PARAMETERS
-    directory = config.directory
-    subjects = ['getting started', 'responsive web design', 'javascript algorithms data structures', 'front end libraries', 'data visualization', 'apis microservices', 'information security quality assurance', 'contribute open source help nonprofits', 'coding interview questions take home assignments', 'endofthewholelist']
-
-    
-    channels = [
-        #{"id":"546fd572db8155e6700d6eaf","name":"FreeCodeCamp/Freecodecamp"},
-        {"id":"5695eb3e16b6c7089cc24e10","name":"FreeCodeCamp/HelpBackEnd"},
-        #{"id":"5695e9a116b6c7089cc24db5","name":"FreeCodeCamp/HelpJavaScript"},
-        {"id":"5695eab116b6c7089cc24de2","name":"FreeCodeCamp/HelpFrontEnd"},
-        #{"id":"54a2fa80db8155e6700e42c3","name":"FreeCodeCamp/Help"},
-        ]
-    
-    title = [
-            #freecodecamp2,
-            "helpbackend1",
-            #"helpjavascript1",
-            "helpfrontend1",
-            #"help1",
-             ]
-    
-    def create_global_db():
-        global db
-        db = {"platformstable":{}, "userstable":{}, "textstable":{}, "fcc_subjects": {}, "plt_categories" : []}
-    
-    def use_global_db():
-        return db
-        
-    create_global_db()    
-    
-    for ic, channel in enumerate(channels):
-        print(channel["name"])
-        #data_collection(channel["id"], directory)
-        with open(directory+title[ic]+"_test.pkl", "rb") as infile:
-            raw = pickle.load(infile)
-            links_extraction_phase1(raw, title[ic])
-        try:
-            with open(directory+title[ic]+"_treateddata_links.pkl", "rb") as infile:
-                botdata = pickle.load(infile)
-                completing_db_with_data_from_botandcv(botdata)
-        except (FileNotFoundError):
-            print("A FILE ERROR has been found for ", title[ic])
-        except:
-            raise
-    for sb in subjects:
-        html_ranking = html_tests(sb)
-        with open(directory+'A_html_'+sb+'_links.html','w') as f:
-            f.write(html_ranking)
-    #calculating_total_subjectandcategories()
-    #pyrebase_conn(db)
+# #########################################
+# ##MAIN
+# #########################################
+# 
+# if __name__ == "__main__":
+#     #https://stackoverflow.com/questions/423379/using-global-variables-in-a-function-other-than-the-one-that-created-them
+#     
+#     ####PARAMETERS
+#     directory = config.directory
+#     subjects = ['getting started', 'responsive web design', 'javascript algorithms data structures', 'front end libraries', 'data visualization', 'apis microservices', 'information security quality assurance', 'contribute open source help nonprofits', 'coding interview questions take home assignments', 'endofthewholelist']
+# 
+#     
+#     channels = [
+#         #{"id":"546fd572db8155e6700d6eaf","name":"FreeCodeCamp/Freecodecamp"},
+#         {"id":"5695eb3e16b6c7089cc24e10","name":"FreeCodeCamp/HelpBackEnd"},
+#         #{"id":"5695e9a116b6c7089cc24db5","name":"FreeCodeCamp/HelpJavaScript"},
+#         {"id":"5695eab116b6c7089cc24de2","name":"FreeCodeCamp/HelpFrontEnd"},
+#         #{"id":"54a2fa80db8155e6700e42c3","name":"FreeCodeCamp/Help"},
+#         ]
+#     
+#     title = [
+#             #freecodecamp2,
+#             "helpbackend1",
+#             #"helpjavascript1",
+#             "helpfrontend1",
+#             #"help1",
+#              ]
+#     
+#     def create_global_db():
+#         global db
+#         db = {"platformstable":{}, "userstable":{}, "textstable":{}, "fcc_subjects": {}, "plt_categories" : []}
+#     
+#     def use_global_db():
+#         return db
+#         
+#     create_global_db()    
+#     
+#     for ic, channel in enumerate(channels):
+#         print(channel["name"])
+#         #data_collection(channel["id"], directory)
+#         with open(directory+title[ic]+"_test.pkl", "rb") as infile:
+#             raw = pickle.load(infile)
+#             links_extraction_phase1(raw, title[ic])
+#         try:
+#             with open(directory+title[ic]+"_treateddata_links.pkl", "rb") as infile:
+#                 botdata = pickle.load(infile)
+#                 completing_db_with_data_from_botandcv(botdata)
+#         except (FileNotFoundError):
+#             print("A FILE ERROR has been found for ", title[ic])
+#         except:
+#             raise
+#     for sb in subjects:
+#         html_ranking = html_tests(sb)
+#         with open(directory+'A_html_'+sb+'_links.html','w') as f:
+#             f.write(html_ranking)
+#     #calculating_total_subjectandcategories()
+#     #pyrebase_conn(db)
 
     
 

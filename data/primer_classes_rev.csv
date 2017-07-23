@@ -1,0 +1,131 @@
+platform,class,check,newclass
+omarriott.com,---,0,blog|media|news|articl|content|post|journal
+psitsmike.com,learn|tutorial|course|training| tips|example,0,blog|media|news|articl|content|post|journal
+lostechies.com,api|package|framework|librar|stack|licens|addon|app,0,blog|media|news|articl|content|post|journal
+university.mongodb.com,learn|tutorial|course|training| tips|example,1,learn|tutorial|course|training| tips|example
+wrapbootstrap.com,design|galler|template|theme,1,design|galler|template|theme
+jsbin.com,---,0,(text )?editor|interpreter|repl
+vicheanak.com,learn|tutorial|course|training| tips|example,0,---
+quickleft.com,on?(-|\s)?demand|business|compan(y|ies)|enterprise,1,on?(-|\s)?demand|business|compan(y|ies)|enterprise
+maps.googleapis.com,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+expressjs.com,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+www.jameselsey.co.uk,---,0,blog|media|news|articl|content|post|journal
+theneodesign.com,---,0,design|galler|template|theme
+www.macloo.com,learn|tutorial|course|training| tips|example,0,blog|media|news|articl|content|post|journal
+jsfiddle.net,---,0,(text )?editor|interpreter|repl
+cdnjs.cloudflare.com,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+code.tutsplus.com,learn|tutorial|course|training| tips|example,1,learn|tutorial|course|training| tips|example
+www.smashingmagazine.com,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+altitudelabs.com,on?(-|\s)?demand|business|compan(y|ies)|enterprise,1,on?(-|\s)?demand|business|compan(y|ies)|enterprise
+matthewdaly.co.uk,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+survivejs.com,learn|tutorial|course|training| tips|example,1,learn|tutorial|course|training| tips|example
+courses.angularclass.com,learn|tutorial|course|training| tips|example,1,learn|tutorial|course|training| tips|example
+webapplog.com,learn|tutorial|course|training| tips|example,0,blog|media|news|articl|content|post|journal
+api.jquery.com,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+docs.sequelizejs.com,manual|guide|docs,1,manual|guide|docs
+wildermuth.com,---,0,blog|media|news|articl|content|post|journal
+www.hostingadvice.com,blog|media|news|articl|content|post|journal,0,on?(-|\s)?demand|business|compan(y|ies)|enterprise
+nicolashery.com,api|package|framework|librar|stack|licens|addon|app,0,blog|media|news|articl|content|post|journal
+stormpath.com,blog|media|news|articl|content|post|journal,0,api|package|framework|librar|stack|licens|addon|app
+www.pontikis.net,learn|tutorial|course|training| tips|example,0,blog|media|news|articl|content|post|journal
+www.joshwright.com,---,0,blog|media|news|articl|content|post|journal
+devfreebooks.org,---,0,design|galler|template|theme
+prkr.me,---,0,blog|media|news|articl|content|post|journal
+www.w3schools.com,---,0,learn|tutorial|course|training| tips|example
+www.skilledup.com,learn|tutorial|course|training| tips|example,1,learn|tutorial|course|training| tips|example
+www.w3resource.com,---,0,searchtools
+preview.c9users.io,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+www.linkedin.com,api|package|framework|librar|stack|licens|addon|app,0,community|support|people|forum
+www.udemy.com,learn|tutorial|course|training| tips|example,1,learn|tutorial|course|training| tips|example
+weblogs.asp.net,api|package|framework|librar|stack|licens|addon|app,0,blog|media|news|articl|content|post|journal
+api.myjson.com,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+javascriptissexy.com,---,0,blog|media|news|articl|content|post|journal
+momentjs.com,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+www.airpair.com,learn|tutorial|course|training| tips|example,0,on?(-|\s)?demand|business|compan(y|ies)|enterprise
+javascriptweekly.com,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+blog.npmjs.org,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+it.wikipedia.org,---,0,blog|media|news|articl|content|post|journal
+chaijs.com,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+blog.serverdensity.com,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+www.abebooks.com,---,0,design|galler|template|theme
+docs.npmjs.com,manual|guide|docs,1,manual|guide|docs
+mongoosejs.com,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+api.datamarket.azure.com,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+egghead.io,learn|tutorial|course|training| tips|example,1,learn|tutorial|course|training| tips|example
+rainsoft.io,learn|tutorial|course|training| tips|example,0,blog|media|news|articl|content|post|journal
+stackoverflow.com,community|support|people|forum,1,community|support|people|forum
+ide.c9.io,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+community.c9.io,community|support|people|forum,1,community|support|people|forum
+en.m.wikipedia.org,---,0,blog|media|news|articl|content|post|journal
+docs.omniref.com,manual|guide|docs,1,manual|guide|docs
+meanjs.org,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+medium.com,learn|tutorial|course|training| tips|example,0,blog|media|news|articl|content|post|journal
+www.codeproject.com,learn|tutorial|course|training| tips|example,0,community|support|people|forum
+developer.mozilla.org,manual|guide|docs,1,manual|guide|docs
+www.codementor.io,on?(-|\s)?demand|business|compan(y|ies)|enterprise,1,on?(-|\s)?demand|business|compan(y|ies)|enterprise
+scotch.io,learn|tutorial|course|training| tips|example,1,learn|tutorial|course|training| tips|example
+sailsjs.org,on?(-|\s)?demand|business|compan(y|ies)|enterprise,0,api|package|framework|librar|stack|licens|addon|app
+tutorialzine.com,learn|tutorial|course|training| tips|example,1,learn|tutorial|course|training| tips|example
+www.wiziq.com,learn|tutorial|course|training| tips|example,1,learn|tutorial|course|training| tips|example
+pugjs.org,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+www.amazon.com,shop|commerce,1,shop|commerce
+www.techrepublic.com,community|support|people|forum,0,blog|media|news|articl|content|post|journal
+www.jokecamp.com,learn|tutorial|course|training| tips|example,0,blog|media|news|articl|content|post|journal
+ramdajs.com,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+semaphoreci.com,community|support|people|forum,0,api|package|framework|librar|stack|licens|addon|app
+bysin.net,blog|media|news|articl|content|post|journal,0,---
+blog.workshape.io,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+dzone.com,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+www.highcharts.com,blog|media|news|articl|content|post|journal,0,api|package|framework|librar|stack|licens|addon|app
+www.afterhoursprogramming.com,learn|tutorial|course|training| tips|example,1,learn|tutorial|course|training| tips|example
+www.digitalocean.com,cloud|platform|service,1,cloud|platform|service
+teamtreehouse.com,learn|tutorial|course|training| tips|example,1,learn|tutorial|course|training| tips|example
+campus.codeschool.com,learn|tutorial|course|training| tips|example,1,learn|tutorial|course|training| tips|example
+nodecasts.io,learn|tutorial|course|training| tips|example,1,learn|tutorial|course|training| tips|example
+www.npmjs.com,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+jrsinclair.com,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+blog.risingstack.com,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+www.clementinejs.com,learn|tutorial|course|training| tips|example,0,api|package|framework|librar|stack|licens|addon|app
+ponyfoo.com,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+nodejs.org,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+babeljs.io,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+www.cambus.net,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+www.infoworld.com,on?(-|\s)?demand|business|compan(y|ies)|enterprise,0,blog|media|news|articl|content|post|journal
+addons.mozilla.org,---,0,api|package|framework|librar|stack|licens|addon|app
+www.justinmccandless.com,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+www.reddit.com,---,0,community|support|people|forum
+readwrite.com,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+theholmesoffice.com,learn|tutorial|course|training| tips|example,0,blog|media|news|articl|content|post|journal
+addyosmani.com,learn|tutorial|course|training| tips|example,0,blog|media|news|articl|content|post|journal
+maxcdn.bootstrapcdn.com,---,0,api|package|framework|librar|stack|licens|addon|app
+stackabuse.com,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+codecondo.com,learn|tutorial|course|training| tips|example,0,blog|media|news|articl|content|post|journal
+perfectionkills.com,---,0,blog|media|news|articl|content|post|journal
+junerockwell.com,design|galler|template|theme,0,blog|media|news|articl|content|post|journal
+www.sitepoint.com,learn|tutorial|course|training| tips|example,1,learn|tutorial|course|training| tips|example
+zeit.co,cloud|platform|service,1,cloud|platform|service
+docs.angularjs.org,manual|guide|docs,1,manual|guide|docs
+smashinghub.com,learn|tutorial|course|training| tips|example,0,design|galler|template|theme
+cdnjs.com,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+v4-alpha.getbootstrap.com,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+tools.ietf.org,---,0,community|support|people|forum
+getbootstrap.com,api|package|framework|librar|stack|licens|addon|app,1,api|package|framework|librar|stack|licens|addon|app
+schinckel.net,---,0,blog|media|news|articl|content|post|journal
+blog.soulserv.net,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+docs.nodejitsu.com,manual|guide|docs,1,manual|guide|docs
+alexcican.com,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+code.runnable.com,---,0,(text )?editor|interpreter|repl
+jasonjl.me,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+www.ctl.io,on?(-|\s)?demand|business|compan(y|ies)|enterprise,1,on?(-|\s)?demand|business|compan(y|ies)|enterprise
+www.angular-meteor.com,learn|tutorial|course|training| tips|example,0,api|package|framework|librar|stack|licens|addon|app
+devcenter.heroku.com,community|support|people|forum,1,community|support|people|forum
+www.tutorialspoint.com,learn|tutorial|course|training| tips|example,1,learn|tutorial|course|training| tips|example
+preciousinformation.wordpress.com,---,0,blog|media|news|articl|content|post|journal
+praveenlobo.com,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+css-tricks.com,learn|tutorial|course|training| tips|example,1,learn|tutorial|course|training| tips|example
+www.codeschool.com,learn|tutorial|course|training| tips|example,1,learn|tutorial|course|training| tips|example
+codeforgeek.com,learn|tutorial|course|training| tips|example,0,blog|media|news|articl|content|post|journal
+www.bogotobogo.com,api|package|framework|librar|stack|licens|addon|app,0,blog|media|news|articl|content|post|journal
+mherman.org,blog|media|news|articl|content|post|journal,1,blog|media|news|articl|content|post|journal
+whateverthesiteis.xyz,---,1,---
+techboyzzz.wordpress.com,learn|tutorial|course|training| tips|example,0,blog|media|news|articl|content|post|journal

@@ -31,12 +31,20 @@ This repository and its content is still under construction and it is not ready 
 
 However we can mention that:
 * it is run under *UNIX-like operating system (Ubuntu 16.04)*
-* Python 3.5.2, IPython 4.2.0, both in Anaconda 4.1.1
+* Python 3.5.2, IPython 4.2.0, Jupyter 4.1.0, in Anaconda 4.1.1
 
-For privacy reasons the project won't include:
+The project is not including any conda. In the current conditions you will have to either create a conda or run anaconda as root from the top of the project directory, depending on how you installed the required python libraries.
+
+*OBSERVATION: Please verify your current working directory when opening the project either with ipython or jupyter, it could be different.*
+
+Currently the project is **not** delivered within a container (eg. vagrant, docker).
+
+For privacy and other reasons the project is not currently including:
 * local directories
 * critical access information (databases, API's); some of the API's are public and the code can be replicated if you get an API for the corresponding platform; access to database is restricted: only reading is public
 
+The owner of this repository keeps the right to share additional information.
+
 ## Related projects
 
-For more information about the associated advances in rendering of this project, please visit this repository: https://github.com/evaristoc/fCC_R3 (work-in-progress)
+For more information about the associated advances in rendering of this project, please visit this repository: https://github.com/evaristoc/fCC_R3

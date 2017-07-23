@@ -1,0 +1,475 @@
+,platform,newclass
+0,omarriott.com,blog|media|news|articl|content|post|journal
+1,psitsmike.com,blog|media|news|articl|content|post|journal
+2,lostechies.com,blog|media|news|articl|content|post|journal
+3,university.mongodb.com,learn|tutorial|course|training| tips|example
+4,wrapbootstrap.com,design|galler|template|theme
+5,jsbin.com,(text )?editor|interpreter|repl
+6,vicheanak.com,---
+7,quickleft.com,on?(-|\s)?demand|business|compan(y|ies)|enterprise
+8,maps.googleapis.com,api|package|framework|librar|stack|licens|addon|app
+9,expressjs.com,api|package|framework|librar|stack|licens|addon|app
+10,www.jameselsey.co.uk,blog|media|news|articl|content|post|journal
+11,theneodesign.com,design|galler|template|theme
+12,www.macloo.com,blog|media|news|articl|content|post|journal
+13,jsfiddle.net,(text )?editor|interpreter|repl
+14,cdnjs.cloudflare.com,api|package|framework|librar|stack|licens|addon|app
+15,code.tutsplus.com,learn|tutorial|course|training| tips|example
+16,www.smashingmagazine.com,blog|media|news|articl|content|post|journal
+17,altitudelabs.com,on?(-|\s)?demand|business|compan(y|ies)|enterprise
+18,matthewdaly.co.uk,blog|media|news|articl|content|post|journal
+19,survivejs.com,learn|tutorial|course|training| tips|example
+20,courses.angularclass.com,learn|tutorial|course|training| tips|example
+21,webapplog.com,blog|media|news|articl|content|post|journal
+22,api.jquery.com,api|package|framework|librar|stack|licens|addon|app
+23,docs.sequelizejs.com,manual|guide|docs
+24,wildermuth.com,blog|media|news|articl|content|post|journal
+25,www.hostingadvice.com,on?(-|\s)?demand|business|compan(y|ies)|enterprise
+26,nicolashery.com,blog|media|news|articl|content|post|journal
+27,stormpath.com,api|package|framework|librar|stack|licens|addon|app
+28,www.pontikis.net,blog|media|news|articl|content|post|journal
+29,www.joshwright.com,blog|media|news|articl|content|post|journal
+30,devfreebooks.org,design|galler|template|theme
+31,prkr.me,blog|media|news|articl|content|post|journal
+32,www.w3schools.com,learn|tutorial|course|training| tips|example
+33,www.skilledup.com,learn|tutorial|course|training| tips|example
+34,www.w3resource.com,searchtools
+35,preview.c9users.io,api|package|framework|librar|stack|licens|addon|app
+36,www.linkedin.com,community|support|people|forum
+37,www.udemy.com,learn|tutorial|course|training| tips|example
+38,weblogs.asp.net,blog|media|news|articl|content|post|journal
+39,api.myjson.com,api|package|framework|librar|stack|licens|addon|app
+40,javascriptissexy.com,blog|media|news|articl|content|post|journal
+41,momentjs.com,api|package|framework|librar|stack|licens|addon|app
+42,www.airpair.com,on?(-|\s)?demand|business|compan(y|ies)|enterprise
+43,javascriptweekly.com,blog|media|news|articl|content|post|journal
+44,blog.npmjs.org,blog|media|news|articl|content|post|journal
+45,it.wikipedia.org,blog|media|news|articl|content|post|journal
+46,chaijs.com,api|package|framework|librar|stack|licens|addon|app
+47,blog.serverdensity.com,blog|media|news|articl|content|post|journal
+48,www.abebooks.com,design|galler|template|theme
+49,docs.npmjs.com,manual|guide|docs
+50,mongoosejs.com,api|package|framework|librar|stack|licens|addon|app
+51,api.datamarket.azure.com,api|package|framework|librar|stack|licens|addon|app
+52,egghead.io,learn|tutorial|course|training| tips|example
+53,rainsoft.io,blog|media|news|articl|content|post|journal
+54,stackoverflow.com,community|support|people|forum
+55,ide.c9.io,api|package|framework|librar|stack|licens|addon|app
+56,community.c9.io,community|support|people|forum
+57,en.m.wikipedia.org,blog|media|news|articl|content|post|journal
+58,docs.omniref.com,manual|guide|docs
+59,meanjs.org,api|package|framework|librar|stack|licens|addon|app
+60,medium.com,blog|media|news|articl|content|post|journal
+61,www.codeproject.com,community|support|people|forum
+62,developer.mozilla.org,manual|guide|docs
+63,www.codementor.io,on?(-|\s)?demand|business|compan(y|ies)|enterprise
+64,scotch.io,learn|tutorial|course|training| tips|example
+65,sailsjs.org,api|package|framework|librar|stack|licens|addon|app
+66,tutorialzine.com,learn|tutorial|course|training| tips|example
+67,www.wiziq.com,learn|tutorial|course|training| tips|example
+68,pugjs.org,api|package|framework|librar|stack|licens|addon|app
+69,www.amazon.com,shop|commerce
+70,www.techrepublic.com,blog|media|news|articl|content|post|journal
+71,www.jokecamp.com,blog|media|news|articl|content|post|journal
+72,ramdajs.com,api|package|framework|librar|stack|licens|addon|app
+73,semaphoreci.com,api|package|framework|librar|stack|licens|addon|app
+74,bysin.net,---
+75,blog.workshape.io,blog|media|news|articl|content|post|journal
+76,dzone.com,blog|media|news|articl|content|post|journal
+77,www.highcharts.com,api|package|framework|librar|stack|licens|addon|app
+78,www.afterhoursprogramming.com,learn|tutorial|course|training| tips|example
+79,www.digitalocean.com,cloud|platform|service
+80,teamtreehouse.com,learn|tutorial|course|training| tips|example
+81,campus.codeschool.com,learn|tutorial|course|training| tips|example
+82,nodecasts.io,learn|tutorial|course|training| tips|example
+83,www.npmjs.com,api|package|framework|librar|stack|licens|addon|app
+84,jrsinclair.com,blog|media|news|articl|content|post|journal
+85,blog.risingstack.com,blog|media|news|articl|content|post|journal
+86,www.clementinejs.com,api|package|framework|librar|stack|licens|addon|app
+87,ponyfoo.com,blog|media|news|articl|content|post|journal
+88,nodejs.org,api|package|framework|librar|stack|licens|addon|app
+89,babeljs.io,api|package|framework|librar|stack|licens|addon|app
+90,www.cambus.net,blog|media|news|articl|content|post|journal
+91,www.infoworld.com,blog|media|news|articl|content|post|journal
+92,addons.mozilla.org,api|package|framework|librar|stack|licens|addon|app
+93,www.justinmccandless.com,blog|media|news|articl|content|post|journal
+94,www.reddit.com,community|support|people|forum
+95,readwrite.com,blog|media|news|articl|content|post|journal
+96,theholmesoffice.com,blog|media|news|articl|content|post|journal
+97,addyosmani.com,blog|media|news|articl|content|post|journal
+98,maxcdn.bootstrapcdn.com,api|package|framework|librar|stack|licens|addon|app
+99,stackabuse.com,blog|media|news|articl|content|post|journal
+100,codecondo.com,blog|media|news|articl|content|post|journal
+101,perfectionkills.com,blog|media|news|articl|content|post|journal
+102,junerockwell.com,blog|media|news|articl|content|post|journal
+103,www.sitepoint.com,learn|tutorial|course|training| tips|example
+104,zeit.co,cloud|platform|service
+105,docs.angularjs.org,manual|guide|docs
+106,smashinghub.com,design|galler|template|theme
+107,cdnjs.com,api|package|framework|librar|stack|licens|addon|app
+108,v4-alpha.getbootstrap.com,api|package|framework|librar|stack|licens|addon|app
+109,tools.ietf.org,community|support|people|forum
+110,getbootstrap.com,api|package|framework|librar|stack|licens|addon|app
+111,schinckel.net,blog|media|news|articl|content|post|journal
+112,blog.soulserv.net,blog|media|news|articl|content|post|journal
+113,docs.nodejitsu.com,manual|guide|docs
+114,alexcican.com,blog|media|news|articl|content|post|journal
+115,code.runnable.com,(text )?editor|interpreter|repl
+116,jasonjl.me,blog|media|news|articl|content|post|journal
+117,www.ctl.io,on?(-|\s)?demand|business|compan(y|ies)|enterprise
+118,www.angular-meteor.com,api|package|framework|librar|stack|licens|addon|app
+119,devcenter.heroku.com,community|support|people|forum
+120,www.tutorialspoint.com,learn|tutorial|course|training| tips|example
+121,preciousinformation.wordpress.com,blog|media|news|articl|content|post|journal
+122,praveenlobo.com,blog|media|news|articl|content|post|journal
+123,css-tricks.com,learn|tutorial|course|training| tips|example
+124,www.codeschool.com,learn|tutorial|course|training| tips|example
+125,codeforgeek.com,blog|media|news|articl|content|post|journal
+126,www.bogotobogo.com,blog|media|news|articl|content|post|journal
+127,mherman.org,blog|media|news|articl|content|post|journal
+128,whateverthesiteis.xyz,---
+129,techboyzzz.wordpress.com,blog|media|news|articl|content|post|journal
+130,,---
+131,127.0.0.1:62950,---
+132,1stwebdesigner.com,blog|media|news|articl|content|post|journal
+133,1stwebmagazine.com,blog|media|news|articl|content|post|journal
+134,ageekandhisblog.com,blog|media|news|articl|content|post|journal
+135,ajax.googleapis.com,api|package|framework|librar|stack|licens|addon|app
+136,ajayt365.github.io,blog|media|news|articl|content|post|journal
+137,alertifyjs.com,api|package|framework|librar|stack|licens|addon|app
+138,alijafarian.com,blog|media|news|articl|content|post|journal
+139,amitp88.github.io,blog|media|news|articl|content|post|journal
+140,andruxnet-random-famous-quotes.p.mashape.com,api|package|framework|librar|stack|licens|addon|app
+141,angular.io,api|package|framework|librar|stack|licens|addon|app
+142,angularjs.org,api|package|framework|librar|stack|licens|addon|app
+143,api.darksky.net,api|package|framework|librar|stack|licens|addon|app
+144,api.forismatic.com,api|package|framework|librar|stack|licens|addon|app
+145,api.jqueryui.com,api|package|framework|librar|stack|licens|addon|app
+146,api.openweathermap.org,api|package|framework|librar|stack|licens|addon|app
+147,api.walkscore.com,api|package|framework|librar|stack|licens|addon|app
+148,ariya.io,blog|media|news|articl|content|post|journal
+149,arnique.net,blog|media|news|articl|content|post|journal
+150,atom.io,(text )?editor|interpreter|repl
+151,benfrain.com,blog|media|news|articl|content|post|journal
+152,blog.bugsnag.com,blog|media|news|articl|content|post|journal
+153,blog.codeply.com,blog|media|news|articl|content|post|journal
+154,blog.engineyard.com,blog|media|news|articl|content|post|journal
+155,blog.garstasio.com,blog|media|news|articl|content|post|journal
+156,blog.getbootstrap.com,blog|media|news|articl|content|post|journal
+157,blog.jetstrap.com,blog|media|news|articl|content|post|journal
+158,blog.jquery.com,blog|media|news|articl|content|post|journal
+159,blog.mashape.com,blog|media|news|articl|content|post|journal
+160,blog.mgechev.com,blog|media|news|articl|content|post|journal
+161,blog.movalog.com,blog|media|news|articl|content|post|journal
+162,blog.teamtreehouse.com,blog|media|news|articl|content|post|journal
+163,bootstrapdocs.com,manual|guide|docs
+164,bryanhadaway.com,blog|media|news|articl|content|post|journal
+165,callmenick.com,blog|media|news|articl|content|post|journal
+166,cameronspear.com,blog|media|news|articl|content|post|journal
+167,charliepark.org,blog|media|news|articl|content|post|journal
+168,chibicode.com,blog|media|news|articl|content|post|journal
+169,courses.reactjsprogram.com,learn|tutorial|course|training| tips|example
+170,crossorigin,api|package|framework|librar|stack|licens|addon|app
+171,crossorigin.me,api|package|framework|librar|stack|licens|addon|app
+172,d3js.org,api|package|framework|librar|stack|licens|addon|app
+173,demos.creative-tim.com,design|galler|template|theme
+174,demos.flesler.com,blog|media|news|articl|content|post|journal
+175,dev.twitter.com,manual|guide|docs
+176,dev.w3.org,manual|guide|docs
+177,devdocs.io,manual|guide|docs
+178,developers.facebook.com,manual|guide|docs
+179,docs.mashape.com,manual|guide|docs
+180,domain,api|package|framework|librar|stack|licens|addon|app
+181,ejohn.org,blog|media|news|articl|content|post|journal
+182,eloquentjavascript.net,blog|media|news|articl|content|post|journal
+183,en.wikipedia.org,blog|media|news|articl|content|post|journal
+184,errors.angularjs.org,manual|guide|docs
+185,expo.getbootstrap.com,api|package|framework|librar|stack|licens|addon|app
+186,fittextjs.com,api|package|framework|librar|stack|licens|addon|app
+187,flipclockjs.com,api|package|framework|librar|stack|licens|addon|app
+188,fontawesome.io,api|package|framework|librar|stack|licens|addon|app
+189,forum.jquery.com,community|support|people|forum
+190,freegeoip.net,api|package|framework|librar|stack|licens|addon|app
+191,geoip-db.com,api|package|framework|librar|stack|licens|addon|app
+192,git.vacanor.com:81,blog|media|news|articl|content|post|journal
+193,glyphicons.bootstrapcheatsheets.com,design|galler|template|theme
+194,h1tag.github.io,blog|media|news|articl|content|post|journal
+195,highlightjs.org,api|package|framework|librar|stack|licens|addon|app
+196,hughfdjackson.com,blog|media|news|articl|content|post|journal
+197,ianlunn.co.uk,blog|media|news|articl|content|post|journal
+198,idiallo.com,blog|media|news|articl|content|post|journal
+199,ihatetomatoes.net,blog|media|news|articl|content|post|journal
+200,image.slidesharecdn.com,blog|media|news|articl|content|post|journal
+201,imperativeideas.com,blog|media|news|articl|content|post|journal
+202,index.htm,---
+203,ip-api,api|package|framework|librar|stack|licens|addon|app
+204,ip-api.com,api|package|framework|librar|stack|licens|addon|app
+205,ipapi.co,api|package|framework|librar|stack|licens|addon|app
+206,ipinfo.io,api|package|framework|librar|stack|licens|addon|app
+207,javascriptweblog.wordpress.com,blog|media|news|articl|content|post|journal
+208,jhtmlcss.blogspot.com,blog|media|news|articl|content|post|journal
+209,jonocharlesdavey.com,blog|media|news|articl|content|post|journal
+210,jquery.com,api|package|framework|librar|stack|licens|addon|app
+211,jquerymobile.com,api|package|framework|librar|stack|licens|addon|app
+212,jqueryui.com,api|package|framework|librar|stack|licens|addon|app
+213,js2ls.org,(text )?editor|interpreter|repl
+214,jsbeautifier.org,(text )?editor|interpreter|repl
+215,jshint.com,(text )?editor|interpreter|repl
+216,jsonformat.com,---
+217,jsonformatter.curiousconcept.com,(text )?editor|interpreter|repl
+218,jsonip.com,api|package|framework|librar|stack|licens|addon|app
+219,jsonviewer.stack.hu,blog|media|news|articl|content|post|journal
+220,keithclark.co.uk,blog|media|news|articl|content|post|journal
+221,learn.jquery.com,learn|tutorial|course|training|
+222,lmgtfy.com,api|package|framework|librar|stack|licens|addon|app
+223,localhost:63342,---
+224,mathiasbynens.be,blog|media|news|articl|content|post|journal
+225,mathjs.org,api|package|framework|librar|stack|licens|addon|app
+226,minifiedjs.com,api|package|framework|librar|stack|licens|addon|app
+227,mr-kumar-abhishek.github.io,blog|media|news|articl|content|post|journal
+228,netdna.bootstrapcdn.com,api|package|framework|librar|stack|licens|addon|app
+229,npmcdn.com,api|package|framework|librar|stack|licens|addon|app
+230,openweathermap.org,api|package|framework|librar|stack|licens|addon|app
+231,paperjs.org,api|package|framework|librar|stack|licens|addon|app
+232,query.yahooapis.com,api|package|framework|librar|stack|licens|addon|app
+233,quotes.stormconsultancy.co.uk,blog|media|news|articl|content|post|journal
+234,raw.githubusercontent.com,api|package|framework|librar|stack|licens|addon|app
+235,repl.it,(text )?editor|interpreter|repl
+236,sacha.me,blog|media|news|articl|content|post|journal
+237,scrollrevealjs.org,api|package|framework|librar|stack|licens|addon|app
+238,simpleweatherjs.com,api|package|framework|librar|stack|licens|addon|app
+239,startbootstrap.com,design|galler|template|theme
+240,static.jsbin.com,(text )?editor|interpreter|repl
+241,toddmotto.com,blog|media|news|articl|content|post|journal
+242,tutorialrepublic.com,learn|tutorial|course|training| tips|example
+243,w3layouts.com,design|galler|template|theme
+244,w3lessons.info,---
+245,w3schools.com,learn|tutorial|course|training| tips|example
+246,wordpress.org,blog|media|news|articl|content|post|journal
+247,wordpress.stackexchange.com,blog|media|news|articl|content|post|journal
+248,www.codecademy.com,learn|tutorial|course|training| tips|example
+249,www.codewars.com,learn|tutorial|course|training| tips|example
+250,www.codexworld.com,blog|media|news|articl|content|post|journal
+251,www.crossorigin.me,api|package|framework|librar|stack|licens|addon|app
+252,www.digitaltrends.com,blog|media|news|articl|content|post|journal
+253,www.edx.org,learn|tutorial|course|training| tips|example
+254,www.helloerik.com,blog|media|news|articl|content|post|journal
+255,www.html5canvastutorials.com,learn|tutorial|course|training| tips|example
+256,www.htmlhelp.com,learn|tutorial|course|training| tips|example
+257,www.ibm.com,on?(-|\s)?demand|business|compan(y|ies)|enterprise
+258,www.khanacademy.org,learn|tutorial|course|training| tips|example
+259,www.standardista.com,blog|media|news|articl|content|post|journal
+260,www.the-art-of-web.com,learn|tutorial|course|training| tips|example
+261,www.theodinproject.com,learn|tutorial|course|training| tips|example
+262,www.tutorialrepublic.com,learn|tutorial|course|training| tips|example
+263,www.udacity.com,learn|tutorial|course|training| tips|example
+264,www.utexas.edu,learn|tutorial|course|training| tips|example
+265,youmightnotneedjquery.com,learn|tutorial|course|training| tips|example
+266,zeptojs.com,api|package|framework|librar|stack|licens|addon|app
+267,zerosixthree.se,blog|media|news|articl|content|post|journal
+268,,---
+269,4dev.tech,learn|tutorial|course|training|tips|example
+270,a11yproject.com,community|support|people|forum
+271,alistapart.com,blog|media|news|articl|content|post|journal
+272,amazingcarousel.com,design|galler|template|theme
+273,anyorigin.com,api|package|framework|librar|stack|licens|addon|app
+274,app.pluralsight.com,learn|tutorial|course|training|tips|example
+275,appendto.com,learn|tutorial|course|training|tips|example
+276,bob.ippoli.to,blog|media|news|articl|content|post|journal
+277,bootstrap-switch.min.css,api|package|framework|librar|stack|licens|addon|app
+278,caniuse.com,manual|guide|docs
+279,cdn.rawgit.com,api|package|framework|librar|stack|licens|addon|app
+280,codebeautify.org,design|galler|template|theme
+281,codedump.io,community|support|people|forum
+282,codeitdown.com,blog|media|news|articl|content|post|journal
+283,codemyviews.com,blog|media|news|articl|content|post|journal
+284,coderwall.com,blog|media|news|articl|content|post|journal
+285,css-snippets.com,learn|tutorial|course|training|tips|example
+286,css3.bradshawenterprises.com,learn|tutorial|course|training|tips|example
+287,csscreator.com,community|support|people|forum
+288,cssguidelin.es,manual|guide|docs
+289,cssreference.io,learn|tutorial|course|training|tips|example
+290,cssreset.com,design|galler|template|theme
+291,ctrlq.org,blog|media|news|articl|content|post|journal
+292,dailyjs.com,blog|media|news|articl|content|post|journal
+293,davidmiller.io,blog|media|news|articl|content|post|journal
+294,davidwalsh.name,blog|media|news|articl|content|post|journal
+295,dcrazed.com,blog|media|news|articl|content|post|journal
+296,debugmode.net,blog|media|news|articl|content|post|journal
+297,demos.codexworld.com,design|galler|template|theme
+298,designshack.net,blog|media|news|articl|content|post|journal
+299,designsparkle.com,blog|media|news|articl|content|post|journal
+300,dl.dropboxusercontent.com,---
+301,emilolsson.com,blog|media|news|articl|content|post|journal
+302,en.wikiquote.org,api|package|framework|librar|stack|licens|addon|app
+303,en.wiktionary.org,community|support|people|forum
+304,fonts.googleapis.com,---
+305,getbootstrap.com.br,api|package|framework|librar|stack|licens|addon|app
+306,goings.me,api|package|framework|librar|stack|licens|addon|app
+307,gpiot.com,blog|media|news|articl|content|post|journal
+308,gridus-html.neuethemes.net,---
+309,hackernoon.com,learn|tutorial|course|training|tips|example
+310,hackerthemes.com,design|galler|template|theme
+311,howlerjs.com,api|package|framework|librar|stack|licens|addon|app
+312,html.com,---
+313,html2jade.org,(text)?editor|interpreter|repl
+314,html5boilerplate.com,design|galler|template|theme
+315,html5doctor.com,learn|tutorial|course|training|tips|example
+316,html5layouts.com,design|galler|template|theme
+317,html5up.net,design|galler|template|theme
+318,htmlcolorcodes.com,design|galler|template|theme
+319,javascript.info,blog|media|news|articl|content|post|journal
+320,javascript30.com,learn|tutorial|course|training|tips|example
+321,javascriptical.com,---
+322,jquery-textfill.github.io,blog|media|news|articl|content|post|journal
+323,jqueryvalidation.org,api|package|framework|librar|stack|licens|addon|app
+324,jscroll.com,api|package|framework|librar|stack|licens|addon|app
+325,jsonapi.org,api|package|framework|librar|stack|licens|addon|app
+326,jsonlint.com,(text)?editor|interpreter|repl
+327,jsonp.afeld.me,blog|media|news|articl|content|post|journal
+328,jsonplaceholder.typicode.com,api|package|framework|librar|stack|licens|addon|app
+329,jsonresume.org,api|package|framework|librar|stack|licens|addon|app
+330,kunalgupta05.github.io,blog|media|news|articl|content|post|journal
+331,lea.verou.me,---
+332,learn.shayhowe.com,learn|tutorial|course|training|tips|example
+333,learnswfobject.com,learn|tutorial|course|training|tips|example
+334,macengr.wordpress.com,blog|media|news|articl|content|post|journal
+335,materializecss.com,api|package|framework|librar|stack|licens|addon|app
+336,microblog.anthonyestebe.com,blog|media|news|articl|content|post|journal
+337,modernweb.com,blog|media|news|articl|content|post|journal
+338,parse.com,api|package|framework|librar|stack|licens|addon|app
+339,perishablepress.com,blog|media|news|articl|content|post|journal
+340,photos-1.dropbox.com,---
+341,prasadhonrao.com,blog|media|news|articl|content|post|journal
+342,purecss.io,api|package|framework|librar|stack|licens|addon|app
+343,quotesondesign.com,api|package|framework|librar|stack|licens|addon|app
+344,rachelandrew.co.uk,blog|media|news|articl|content|post|journal
+345,recurial.com,blog|media|news|articl|content|post|journal
+346,robertnyman.com,blog|media|news|articl|content|post|journal
+347,rosettacode.org,design|galler|template|theme
+348,rowanmanning.com,blog|media|news|articl|content|post|journal
+349,saijogeorge.com,blog|media|news|articl|content|post|journal
+350,sarfraznawaz.wordpress.com,blog|media|news|articl|content|post|journal
+351,scottiestech.info,blog|media|news|articl|content|post|journal
+352,sixrevisions.com,blog|media|news|articl|content|post|journal
+353,snook.ca,---
+354,v3.bootcss.com,api|package|framework|librar|stack|licens|addon|app
+355,v4-alpha.getbootstrap.com),api|package|framework|librar|stack|licens|addon|app
+356,w3techs.com,manual|guide|docs
+357,websolutionsdone.com,blog|media|news|articl|content|post|journal
+358,wesbos.com,blog|media|news|articl|content|post|journal
+359,www.abeautifulsite.net,blog|media|news|articl|content|post|journal
+360,www.ascii.cl,---
+361,www.breakthrusoftware.com,on?(-|\s)?demand|business|compan(y|ies)|enterprise
+362,www.cambiaresearch.com,blog|media|news|articl|content|post|journal
+363,www.creativebloq.com,blog|media|news|articl|content|post|journal
+364,www.dashingd3js.com,learn|tutorial|course|training|tips|example
+365,www.emailjs.com,api|package|framework|librar|stack|licens|addon|app
+366,www.javascript-coder.com,learn|tutorial|course|training|tips|example
+367,www.javascripter.net,learn|tutorial|course|training|tips|example
+368,www.javascriptkit.com,learn|tutorial|course|training|tips|example
+369,www.jqueryscript.net,design|galler|template|theme
+370,www.kirupa.com,blog|media|news|articl|content|post|journal
+371,www.lingulo.com,blog|media|news|articl|content|post|journal
+372,www.minimit.com,blog|media|news|articl|content|post|journal
+373,www.mkyong.com,learn|tutorial|course|training|tips|example
+374,www.muicss.com,api|package|framework|librar|stack|licens|addon|app
+375,www.oneskyapp.com,api|package|framework|librar|stack|licens|addon|app
+376,www.packtpub.com,on?(-|\s)?demand|business|compan(y|ies)|enterprise
+377,www.pdf-archive.com,cloud|platform|service
+378,www.pluralsight.com,learn|tutorial|course|training|tips|example
+379,www.w3.org,manual|guide|docs
+380,www.webdesignerdepot.com,blog|media|news|articl|content|post|journal
+381,www.webucator.com,learn|tutorial|course|training|tips|example
+382,www.wikidata.org,api|package|framework|librar|stack|licens|addon|app
+383,, ---
+384,azmind.com, design|galler|template|theme
+385,bootsnipp.com, design|galler|template|theme
+386,bootstrapbay.com, design|galler|template|theme
+387,bootstrapcreative.com, design|galler|template|theme
+388,brm.io, api|package|framework|librar|stack|licens|addon|app
+389,code.ionicframework.com, api|package|framework|librar|stack|licens|addon|app
+390,code.visualstudio.com, manual|guide|docs
+391,ftp.micronet-rostov.ru, ---
+392,fuqua.io, blog|media|news|articl|content|post|journal
+393,howtocenterincss.com, api|package|framework|librar|stack|licens|addon|app
+394,htmldog.com, learn|tutorial|course|training| tips|example
+395,imperavi.com, blog|media|news|articl|content|post|journal
+396,j4n.co, blog|media|news|articl|content|post|journal
+397,jaketrent.com, blog|media|news|articl|content|post|journal
+398,kyleschaeffer.com, blog|media|news|articl|content|post|journal
+399,lab.abhinayrathore.com, blog|media|news|articl|content|post|journal
+400,labs.omniti.com, manual|guide|docs
+401,lesscss.org, api|package|framework|librar|stack|licens|addon|app
+402,lifeinthegrid.com, blog|media|news|articl|content|post|journal
+403,line25.com, blog|media|news|articl|content|post|journal
+404,mdbootstrap.com, api|package|framework|librar|stack|licens|addon|app
+405,medialoot.com, design|galler|template|theme
+406,meyerweb.com, blog|media|news|articl|content|post|journal
+407,miracle.site40.net, cloud|platform|service
+408,mojs.io, api|package|framework|librar|stack|licens|addon|app
+409,ninodezign.com, blog|media|news|articl|content|post|journal
+410,oscarotero.com, blog|media|news|articl|content|post|journal
+411,overapi.com, manual|guide|docs
+412,packagecontrol.io, api|package|framework|librar|stack|licens|addon|app
+413,parall.ax,on?(-|\\s)?demand|business|compan(y|ies)|enterprise
+414,qnimate.com, learn|tutorial|course|training| tips|example
+415,rawgit.com, api|package|framework|librar|stack|licens|addon|app
+416,stanhub.com, blog|media|news|articl|content|post|journal
+417,startupquote.com, api|package|framework|librar|stack|licens|addon|app
+418,thenewcode.com, blog|media|news|articl|content|post|journal
+419,thinkster.io, learn|tutorial|course|training| tips|example
+420,thisdavej.com, learn|tutorial|course|training| tips|example
+421,tympanus.net, blog|media|news|articl|content|post|journal
+422,usher.ttvnw.net, api|package|framework|librar|stack|licens|addon|app
+423,valor-software.com,on?(-|\\s)?demand|business|compan(y|ies)|enterprise
+424,vanseodesign.com, blog|media|news|articl|content|post|journal
+425,w, ---
+426,webdesign.about.com, blog|media|news|articl|content|post|journal
+427,webdesign.tutsplus.com, learn|tutorial|course|training| tips|example
+428,webdesignerwall.com, design|galler|template|theme
+429,wiki.selfhtml.org, learn|tutorial|course|training| tips|example
+430,willschenk.com, blog|media|news|articl|content|post|journal
+431,wind-bow.hyperdev.space, ---
+432,www.9bitstudios.com,on?(-|\\s)?demand|business|compan(y|ies)|enterprise
+433,www.appelsiini.net, api|package|framework|librar|stack|licens|addon|app
+434,www.bootstrapcdn.com, api|package|framework|librar|stack|licens|addon|app
+435,www.bootstraptoggle.com, api|package|framework|librar|stack|licens|addon|app
+436,www.cssdesignawards.com,on?(-|\\s)?demand|business|compan(y|ies)|enterprise
+437,www.cssfontstack.com, design|galler|template|theme
+438,www.cssmatic.com, (text )?editor|interpreter|repl
+439,www.cssscript.com, design|galler|template|theme
+440,www.differencebetween.info, blog|media|news|articl|content|post|journal
+441,www.dreamincode.net, learn|tutorial|course|training| tips|example
+442,www.echoecho.com, learn|tutorial|course|training| tips|example
+443,www.elated.com, blog|media|news|articl|content|post|journal
+444,www.electrictoolbox.com, blog|media|news|articl|content|post|journal
+445,www.freeformatter.com, (text )?editor|interpreter|repl
+446,www.geoplugin.net, api|package|framework|librar|stack|licens|addon|app
+447,www.getbootstrap.com, api|package|framework|librar|stack|licens|addon|app
+448,www.graphics.com, blog|media|news|articl|content|post|journal
+449,www.himpfen.com, blog|media|news|articl|content|post|journal
+450,www.hongkiat.com, blog|media|news|articl|content|post|journal
+451,www.html.am, (text )?editor|interpreter|repl
+452,www.iframehtml.com, api|package|framework|librar|stack|licens|addon|app
+453,www.malot.fr, blog|media|news|articl|content|post|journal
+454,www.mattboldt.com, blog|media|news|articl|content|post|journal
+455,www.mediawiki.org, api|package|framework|librar|stack|licens|addon|app
+456,www.ronaldwidha.net, blog|media|news|articl|content|post|journal
+457,www.rtfmanual.io, learn|tutorial|course|training| tips|example
+458,www.sabinanore.com, ---
+459,www.sanwebe.com, blog|media|news|articl|content|post|journal
+460,www.slant.co, blog|media|news|articl|content|post|journal
+461,www.slideshare.net,community|support|people|forum
+462,www.sololearn.com, learn|tutorial|course|training| tips|example
+463,www.tizag.com, learn|tutorial|course|training| tips|example
+464,www.vanillalist.com, design|galler|template|theme
+465,www.vinaypuppal.com, blog|media|news|articl|content|post|journal
+466,www.wandrr.io, ---
+467,www.wdstandards.com, ---
+468,www.webmaster-source.com, blog|media|news|articl|content|post|journal
+469,www.webweaver.nu, ---
+470,www.wickedlysmart.com,shop|commerce
+471,www.yourhtmlsource.com, blog|media|news|articl|content|post|journal
+472,www.yourtechchick.com, blog|media|news|articl|content|post|journal
+473,xahlee.info, learn|tutorial|course|training| tips|example
