@@ -159,7 +159,7 @@ def links_extraction_phase1(raw, source):
     '''
     db is global for this function
     '''    
-    classedplatforms = dict([(obj['platform'], obj['newclass']) for obj in csv.DictReader(open(directory+'labeledplatformsphase1.csv'))])
+    classedplatforms = dict([(obj['platform'], obj['newclass']) for obj in csv.DictReader(open(directory+'categoriesplatformsphase1.csv'))])
     
     print(len(classedplatforms))
     #print(list(classedplatforms.keys()))
@@ -745,7 +745,42 @@ if __name__ == "__main__":
     etl_formattingsetstolists()
     ##temporary save!
     #pickle.dump(db['platformstable'], open(directory+'/annotatedlinks.pkl', 'bw'))
- 
+    with open(os.getcwd()+'/data/annotatedplatformsphase1.csv', 'w') as outfile:
+        writer = csv.writer(outfile, delimiter=';', quotechar="'")
+        writer.writerow(['platform','title','description','keywords','htext','params','category'])
+        #for k, i in db['platformstable'].items():
+        for k, i in data.items():
+            if k == '' or len(k) < 7:
+                continue
+            title = ''
+            description = ''
+            keywords = ''
+            htext = ''
+            params = ''
+            
+            if i['title'] == None or i['title'] == 'noinformationfound':
+                title = ' '
+            else:
+                title = i['title']
+                
+            if i['description'] == None or i['description'] == 'noinformationfound':
+                description = ' '
+            else:
+                description = i['description']
+
+            if i['keywords'] == None or i['keywords'] == 'noinformationfound':
+                keywords = ' '
+            else:
+                keywords = i['keywords']
+            if i['htext'] == None or i['htext'] == 'noinformationfound':
+                htext = ' '
+            else:
+                htext = i['htext']
+                
+
+            writer.writerow([i['origurl'],title,description,keywords,htext,','.join(i['params']),i['category']])
+    import pandas
+    pddata = pandas.read_csv(open(os.getcwd()+'/data/annotatedplatformsphase1.csv', 'r'), sep=';', quotechar="'")
     #for sb in subjects:
     #    #html_ranking = projutilities.html_tests(sb)
     #    html_ranking = html_tests(sb)
