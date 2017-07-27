@@ -83,7 +83,7 @@ def bowcv_test():
     #print(cv[0])
     #print(cv[2])
     return cv , bow
-    
+
 
 def cvcovering_test(platformdetails, cv, bow):
     '''
@@ -154,12 +154,49 @@ def cvcovering_test(platformdetails, cv, bow):
         platformdetails["subjects"][psb]["count"] = platformdetails["subjects"][psb]["count"]
 
 
+def url_elimination(netloc, url, params):
+    #OJO with first pattern!!!! it was preventing further readings!! too strict
+    pattern01 = re.compile(r'html|css|javascript|js|node\.?js?|angular|react\.?js?|bootstrap|jquery', flags=re.IGNORECASE)
+    pattern02 = re.compile(r'(\b$|\\$|(([a-z]+\.)?(google|freecatphotoapp|twitch|gitter|codepen|youtube|github|freecodecamp|massdrop-s3\.imgix|imgur|walmart|googleusercontent|youtu|s-media-cache-ak0|pinimg|quisk|quisk|flickr)(\.[a-z]+)))', flags=re.IGNORECASE)
+    pattern03 = re.compile(r'herokuapp|postimg|prnt|kym-cdn|imgflip|instagram|twimg|gyazo|bp\.blogspot|@', flags=re.IGNORECASE)
+    pattern04 = re.compile(r'meme|\.(gif|jpeg|jpg|png)$',flags=re.IGNORECASE)
+
+    notpassed = True
+    passed = False
+
+    if netloc in ("files.gitter.im", "gitter.im", "codepen.io", "reddit.com", "www.youtube.com", "github.com"):
+        return notpassed   
+   
+    ##domains that I don't want (OJO: ALWAYS compiled as (xxx.)?DOMAINNAME(.xxx)) OR words that I don't want in the domain
+    
+    if re.match(pattern02, netloc) != None or re.search(pattern03, netloc) != None:
+        #print(re.match(pattern02, netloc), re.match(pattern03, netloc))
+        return notpassed
+    
+    ##extensions that either don't want or should be conditioned
+    if re.search(pattern04, url):
+        return notpassed
+    if url.find(".js") > -1:
+        if url.replace(".js", "").find("js") == -1:
+            return notpassed
+    if url.find(".html") > -1:
+        if url.replace(".html", "").find("html") == -1:
+            return notpassed
+    
+    ##urls with a good domain but an unaccepted param
+    if params in ("/fcc-relaxing-cat", "/t/free-code-camp-official-chat-rooms/19390", "/t/free-code-camp-official-chat-rooms", "/t/free-code-camp-brownie-points/18380", "/t/markdown-code-formatting/18391"):
+        return notpassed
+    
+    if re.search(pattern01, url):
+        return passed
+    else:
+        return notpassed
 
 def links_extraction_phase1(raw, source):
     '''
     db is global for this function
     '''    
-    classedplatforms = dict([(obj['platform'], obj['newclass']) for obj in csv.DictReader(open(directory+'categoriesplatformsphase1.csv'))])
+    classedplatforms = dict([(obj['platform'], obj['newclass']) for obj in csv.DictReader(open(datadirectory+'/categoriesplatformsphase1.csv'))])
     
     print(len(classedplatforms))
     #print(list(classedplatforms.keys()))
@@ -185,8 +222,11 @@ def links_extraction_phase1(raw, source):
 
             #assert platform != 'azmind.com', (platform, source)
             
-            if platform in list(classedplatforms.keys()):
+            if platform not in list(classedplatforms.keys()):
                 if platform == 'forum.freecodecamp.com' and params in ["/fcc-relaxing-cat", "/t/free-code-camp-official-chat-rooms/19390", "/t/free-code-camp-official-chat-rooms", "/t/free-code-camp-brownie-points/18380", "/t/markdown-code-formatting/18391"]:
+                    continue
+
+                if url_elimination(platform, url, params) == True:
                     continue
 
                 #platformstable
@@ -194,14 +234,18 @@ def links_extraction_phase1(raw, source):
                 platform = platform.replace('.','--')
                 
                 if platform not in list(db['platformstable'].keys()):
+                    
+                    
+                    
                     db["platformstable"][platform] = {}
                     db["platformstable"][platform]["origurl"] = plt
-                    if classedplatforms[plt] in ['learn|tutorial|course|training|tips|example', 'learn|tutorial|course|training|']:
-                        db["platformstable"][platform]["category"] = 'learn|tutorial|course|training| tips|example'
-                    elif classedplatforms[plt] in ['(text)?editor|interpreter|repl']:
-                        db["platformstable"][platform]["category"] = '(text )?editor|interpreter|repl'
-                    else:
-                        db["platformstable"][platform]["category"] = classedplatforms[plt].strip(" ")
+                    db["platformstable"][platform]["category"] = None
+                    # if classedplatforms[plt] in ['learn|tutorial|course|training|tips|example', 'learn|tutorial|course|training|']:
+                    #     db["platformstable"][platform]["category"] = 'learn|tutorial|course|training| tips|example'
+                    # elif classedplatforms[plt] in ['(text)?editor|interpreter|repl']:
+                    #     db["platformstable"][platform]["category"] = '(text )?editor|interpreter|repl'
+                    # else:
+                    #     db["platformstable"][platform]["category"] = classedplatforms[plt].strip(" ")
                     db["platformstable"][platform]["frequency-recency"] = []
                     db["platformstable"][platform]["subjects"] = {}
                     db["platformstable"][platform]["minsecurity"] = None
@@ -336,6 +380,10 @@ def botcrawler(platform, URL_BASE_1):
         URL_BASE_2 = 'https://'+URL_BASE_1
     #rp = robotparser.RobotFileParser()
     #print(type(rp))
+    else:
+        print('robot parser failed for ', URL_BASE_2, '\n')
+        db['platformstable'][platform]['crawlstatus'] = 'err_crawl'
+        return
     try:
         print(urllib.parse.urljoin(URL_BASE_2,'/robots.txt'))
         #rp.set_url(urljoin(URL_BASE_2,'/robots.txt'))
@@ -350,6 +398,7 @@ def botcrawler(platform, URL_BASE_1):
             print('bot data collection not allowed for ', URL_BASE_2, '\n')
             db['platformstable'][platform]['crawlstatus'] = 'no_crawl'            
     except:
+        #raise
         print('robot parser failed for ', URL_BASE_2, '\n')
         db['platformstable'][platform]['crawlstatus'] = 'err_crawl'
 
@@ -372,7 +421,7 @@ def botcrawler(platform, URL_BASE_1):
                 print('crawling not allowed for ', URL_BASE_2, '\n')
                 db['platformstable'][platform]['crawlstatus'] = 'no_crawl'            
         except:
-            raise
+            #raise
             print('robot parser failed for ', URL_BASE_2, '\n')
             db['platformstable'][platform]['crawlstatus'] = 'err_crawl'
 
@@ -703,20 +752,26 @@ if __name__ == "__main__":
     
     channels = [
     #     {"id":"546fd572db8155e6700d6eaf","name":"FreeCodeCamp/Freecodecamp"},
-         {"id":"5695eb3e16b6c7089cc24e10","name":"FreeCodeCamp/HelpBackEnd"},
-    #     {"id":"5695e9a116b6c7089cc24db5","name":"FreeCodeCamp/HelpJavaScript"},
-         {"id":"5695eab116b6c7089cc24de2","name":"FreeCodeCamp/HelpFrontEnd"},
+    #     {"id":"5695eb3e16b6c7089cc24e10","name":"FreeCodeCamp/HelpBackEnd"},
+         {"id":"5695e9a116b6c7089cc24db5","name":"FreeCodeCamp/HelpJavaScript"},
+    #     {"id":"5695eab116b6c7089cc24de2","name":"FreeCodeCamp/HelpFrontEnd"},
     #     {"id":"54a2fa80db8155e6700e42c3","name":"FreeCodeCamp/Help"},
          ]
     
     title = [
             #freecodecamp2,
-            "helpbackend1",
-            #"helpjavascript1",
-            "helpfrontend1",
+            #"helpbackend1",
+            "helpjavascript1",
+            #"helpfrontend1",
             #"help1",
              ]
     
+    
+    #annotdata = '/data/annotatedplatformsphase1.csv'
+    annotdata = '/data/notatedplatformsphase1.csv'
+    
+
+
     def create_global_db():
         global db
         db = {"platformstable":{}, "userstable":{}, "textstable":{}, "fcc_subjects": {}, "plt_categories" : []}
@@ -745,11 +800,11 @@ if __name__ == "__main__":
     etl_formattingsetstolists()
     ##temporary save!
     #pickle.dump(db['platformstable'], open(directory+'/annotatedlinks.pkl', 'bw'))
-    with open(os.getcwd()+'/data/annotatedplatformsphase1.csv', 'w') as outfile:
+    with open(os.getcwd()+annotdata, 'w') as outfile:
         writer = csv.writer(outfile, delimiter=';', quotechar="'")
         writer.writerow(['platform','title','description','keywords','htext','params','category'])
-        #for k, i in db['platformstable'].items():
-        for k, i in data.items():
+        for k, i in db['platformstable'].items():
+        #for k, i in data.items():
             if k == '' or len(k) < 7:
                 continue
             title = ''
@@ -780,7 +835,7 @@ if __name__ == "__main__":
 
             writer.writerow([i['origurl'],title,description,keywords,htext,','.join(i['params']),i['category']])
     import pandas
-    pddata = pandas.read_csv(open(os.getcwd()+'/data/annotatedplatformsphase1.csv', 'r'), sep=';', quotechar="'")
+    pddata = pandas.read_csv(open(os.getcwd()+annotdata, 'r'), sep=';', quotechar="'")
     #for sb in subjects:
     #    #html_ranking = projutilities.html_tests(sb)
     #    html_ranking = html_tests(sb)

@@ -6,7 +6,7 @@ This is part of a larger project. The tentative full name of this project is Fre
 
 The project mission is to offer users, in principle new developers, a curated list of relevant resources to learn programming.
 
-This project is a Proof of Concept.
+This repository of the project shows the advances of the data mining and machine learning work.  This project is a Proof of Concept.
 
 This section includes the code for the data mining and the application of machine learning techniques for classifying the gathered resources (`platforms`) - online content mentioned by fCC social media users.
 
@@ -23,7 +23,7 @@ The scripts in this section are used to:
 * solve some ETL issues
 * save data into Firebase
 
-This project is being managed using Kanban methodology (https://realtimeboard.com/blog/choose-between-agile-lean-scrum-kanban/#.WW5nlh9Nybk). This repository of the project shows the advances of the data mining and machine learning work. There exists another repository to shows some of the advances in the rendering of the project (in Angular).
+This project is being approached using Kanban methodology (https://realtimeboard.com/blog/choose-between-agile-lean-scrum-kanban/#.WW5nlh9Nybk).
 
 ## Installation
 
@@ -47,4 +47,7 @@ The owner of this repository keeps the right to share additional information.
 
 ## Related projects
 
-For more information about the associated advances in rendering of this project, please visit this repository: https://github.com/evaristoc/fCC_R3
+For more information about the associated advances in rendering of this project, please visit this repository: https://github.com/evaristoc/fCC_R3.
+
+
+We recently started an exploratory module to interact with Slack. If you are interested please visit the following repository: https://github.com/evaristoc/fCC\_R3\_ChinguModule (currently under construction).
