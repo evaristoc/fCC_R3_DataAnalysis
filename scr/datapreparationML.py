@@ -25,26 +25,26 @@ def datapreparation(data):
         textlist = ['']
         if data.loc[data['platform'] == plt, 'description'].values[0] != '' and data.loc[data['platform'] == plt, 'description'].values[0] != None:
             if data.loc[data['platform'] == plt, 'description'].values[0] not in ['noinformationfound', 'errorreachingpage']:
-                if type(data.loc[data['platform'] == plt, 'description'].values[0]) == str:
+                if type(data.loc[data['platform'] == plt, 'description'].values[0]) == 'str':
                     textlist = textlist + re.sub(pattern01, ' ',data.loc[data['platform'] == plt, 'description'].values[0].lower()).split(' ')
                     count += 1
         if data.loc[data['platform'] == plt, 'keywords'].values[0] != '' and data.loc[data['platform'] == plt, 'keywords'].values[0] != None:
             if data.loc[data['platform'] == plt, 'keywords'].values[0] not in ['noinformationfound', 'errorreachingpage']:
-                if type(data.loc[data['platform'] == plt, 'keywords'].values[0]) == str:
+                if type(data.loc[data['platform'] == plt, 'keywords'].values[0]) == 'str':
                     textlist = textlist + re.sub(pattern01, ' ',data.loc[data['platform'] == plt, 'keywords'].values[0].lower()).split(' ')
                     count += 1
         if data.loc[data['platform'] == plt, 'title'].values[0] != '' and data.loc[data['platform'] == plt, 'title'].values[0] != None:
             if data.loc[data['platform'] == plt, 'title'].values[0] not in ['noinformationfound', 'errorreachingpage']:
-                if type(data.loc[data['platform'] == plt, 'title'].values[0]) == str:
+                if type(data.loc[data['platform'] == plt, 'title'].values[0]) == 'str':
                     textlist = textlist + re.sub(pattern01, ' ',data.loc[data['platform'] == plt, 'title'].values[0].lower()).split(' ')
                     count += 1
         if data.loc[data['platform'] == plt, 'htext'].values[0] != '' and data.loc[data['platform'] == plt, 'htext'].values[0] != None:
             if data.loc[data['platform'] == plt, 'htext'].values[0] not in ['noinformationfound', 'errorreachingpage']:
-                if type(data.loc[data['platform'] == plt, 'htext'].values[0]) == str:
+                if type(data.loc[data['platform'] == plt, 'htext'].values[0]) == 'str':
                     textlist = textlist + re.sub(pattern01, ' ',data.loc[data['platform'] == plt, 'htext'].values[0].lower()).split(' ')
                     count += 1
 
-        if type(data.loc[data['platform'] == plt, 'params'].values[0]) == str:
+        if type(data.loc[data['platform'] == plt, 'params'].values[0]) == 'str':
             for p in data.loc[data['platform'] == plt, 'params'].values[0].split(','):
                 allpwds = re.sub(pattern01, ' ', p.lower()).split(' ')
                 textlist = textlist + allpwds

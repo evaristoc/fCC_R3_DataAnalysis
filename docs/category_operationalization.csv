@@ -1,4 +1,4 @@
-Name:Regex:Definition
+category:category_regex:definition
 ECOMMERCE:shop|commerce:e-Commerce platforms
 COMMUITY:community|support|people|forum': platforms where people can exchange information, Q&A platforms
 REPL:(text )?editor|interpreter|repl:
@@ -10,3 +10,4 @@ PAAS:cloud|platform|service:mostly PaaS or similar
 BUSINESS:on?(-|\s)?demand|business|compan(y|ies)|enterprise: 
 DOCS:manual|guide|docs: 
 SENGINE:search tools: 
+NOCLASS:---: 
