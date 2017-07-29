@@ -50,4 +50,4 @@ The owner of this repository keeps the right to share additional information.
 For more information about the associated advances in rendering of this project, please visit this repository: https://github.com/evaristoc/fCC_R3.
 
 
-We recently started an exploratory module to interact with Slack. If you are interested please visit the following repository: https://github.com/evaristoc/fCC\_R3\_ChinguModule (currently under construction).
+We recently started an exploratory module to interact with Slack. If you are interested please visit the following repository: https://github.com/evaristoc/fCC_R3_ChinguModule (currently under construction).
