@@ -49,5 +49,8 @@ The owner of this repository keeps the right to share additional information.
 
 For more information about the associated advances in rendering of this project, please visit this repository: https://github.com/evaristoc/fCC_R3.
 
+A first demo view of this project can be found at: 
+
+***https://evaristoc.github.io/fCC_R3c/*** (OBSERVATION: this address will be changed soon!)
 
 We recently started an exploratory module to interact with Slack. If you are interested please visit the following repository: https://github.com/evaristoc/fCC_R3_ChinguModule (currently under construction).

@@ -1,9 +1,9 @@
 category:category_regex:definition
 ECOMMERCE:shop|commerce:e-Commerce platforms
-COMMUITY:community|support|people|forum': platforms where people can exchange information, Q&A platforms
+COMMUNITY:community|support|people|forum': platforms where people can exchange information, Q&A platforms
 REPL:(text )?editor|interpreter|repl:
 TRAINING:learn|tutorial|course|training| tips|example: unpersonalised platforms that offer a systematic, progressive, continue and specific learning program, or platforms that host those program
-NEWS:blog|media|news|articl|content|post|journal:CMS or any other platform to post articles; if offering tutorials, those are not organised in a systematic, progressive format, can be about different topics and offer room for unrelated content
+WRCOTENT:blog|media|news|articl|content|post|journal: written content; CMS or any other platform to post articles; books or list of books offered for free; if offering tutorials, those are not organised in a systematic, progressive format, can be about different topics and offer room for unrelated content
 PACKAGE:api|package|framework|librar|stack|licens|addon|app:pages about API, libraries, etc; including main land pages where the resource is described and even some documentation
 THEME:design|galler|template|theme:platforms which content consists on the offer of templates and similar
 PAAS:cloud|platform|service:mostly PaaS or similar
