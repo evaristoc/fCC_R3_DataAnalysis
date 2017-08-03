@@ -192,11 +192,13 @@ def url_elimination(netloc, url, params):
     else:
         return notpassed
 
-def links_extraction_phase1(raw, source):
+#OJO INSERT SOURCE HERE!!!
+def links_extraction_phase1(raw, source, annotdata):
     '''
     db is global for this function
     '''    
-    classedplatforms = dict([(obj['platform'], obj['newclass']) for obj in csv.DictReader(open(datadirectory+'/categoriesplatformsphase1.csv'))])
+    #classedplatforms = dict([(obj['platform'], obj['newclass']) for obj in csv.DictReader(open(datadirectory+'/categoriesplatformsphase1.csv'))])
+    classedplatforms = dict([(obj['platform'], obj['category']) for obj in csv.DictReader(open(os.getcwd()+annotdata, 'r'), delimiter=';', quotechar="'")])
     
     print(len(classedplatforms))
     #print(list(classedplatforms.keys()))
@@ -381,7 +383,7 @@ def botcrawler(platform, URL_BASE_1):
     #rp = robotparser.RobotFileParser()
     #print(type(rp))
     else:
-        print('robot parser failed for ', URL_BASE_2, '\n')
+        print('robot parser failed for ', URL_BASE_1, '\n')
         db['platformstable'][platform]['crawlstatus'] = 'err_crawl'
         return
     try:
@@ -442,7 +444,7 @@ def completing_db_with_data_from_botandcv(botdata):
             db["platformstable"][platform]["subjects"][s]["proportion"] = 0
             db["platformstable"][platform]["subjects"][s]["count"] = 0
 
-        if plt in list(botdata.keys()):
+        if botdata != None and plt in list(botdata.keys()):
             db["platformstable"][platform]["minsecurity"] = botdata[plt]["minsecurity"]
             db["platformstable"][platform]["crawlstatus"] = botdata[plt]["crawlstatus"]
             db["platformstable"][platform]["title"] = botdata[plt]["title"]
@@ -753,23 +755,24 @@ if __name__ == "__main__":
     channels = [
     #     {"id":"546fd572db8155e6700d6eaf","name":"FreeCodeCamp/Freecodecamp"},
     #     {"id":"5695eb3e16b6c7089cc24e10","name":"FreeCodeCamp/HelpBackEnd"},
-         {"id":"5695e9a116b6c7089cc24db5","name":"FreeCodeCamp/HelpJavaScript"},
+    #     {"id":"5695e9a116b6c7089cc24db5","name":"FreeCodeCamp/HelpJavaScript"},
     #     {"id":"5695eab116b6c7089cc24de2","name":"FreeCodeCamp/HelpFrontEnd"},
-    #     {"id":"54a2fa80db8155e6700e42c3","name":"FreeCodeCamp/Help"},
+         {"id":"54a2fa80db8155e6700e42c3","name":"FreeCodeCamp/Help"},
          ]
     
     title = [
             #freecodecamp2,
             #"helpbackend1",
-            "helpjavascript1",
+            #"helpjavascript1",
             #"helpfrontend1",
-            #"help1",
+            "help1",
              ]
     
     
     #annotdata = '/data/annotatedplatformsphase1.csv'
-    annotdata = '/data/notatedplatformsphase1.csv'
-    
+    #annotdata = '/data/notatedplatformsphase1.csv'
+    annotdata = '/data/annotatedplatformsphase1_a2.csv'
+    notdata = '/data/notatedplatformsphase1_a2.csv'
 
 
     def create_global_db():
@@ -787,20 +790,23 @@ if __name__ == "__main__":
         with open(directory+title[ic]+"_test.pkl", "rb") as infile:
             raw = pickle.load(infile)
             #projutilities.links_extraction_phase1(raw, title[ic])
-            links_extraction_phase1(raw, title[ic])
+            #links_extraction_phase1(raw, title[ic])
+            links_extraction_phase1(raw, title[ic], annotdata)
         try:
             with open(directory+title[ic]+"_treateddata_links.pkl", "rb") as infile:
                 botdata = pickle.load(infile)
                 #projutilities.completing_db_with_data_from_botandcv(botdata)
-                completing_db_with_data_from_botandcv(botdata)
         except (FileNotFoundError):
-            print("A FILE ERROR has been found for ", title[ic])
+            print("A FILE ERROR has been found for ", title[ic], ". The `*_treateddata_links.pkl` might not exists.")
+            botdata = None
         except:
             raise
+    #if botdata is None, then completing_db_... will run over all the links provided
+    completing_db_with_data_from_botandcv(botdata)
     etl_formattingsetstolists()
     ##temporary save!
     #pickle.dump(db['platformstable'], open(directory+'/annotatedlinks.pkl', 'bw'))
-    with open(os.getcwd()+annotdata, 'w') as outfile:
+    with open(os.getcwd()+notdata, 'w') as outfile:
         writer = csv.writer(outfile, delimiter=';', quotechar="'")
         writer.writerow(['platform','title','description','keywords','htext','params','category'])
         for k, i in db['platformstable'].items():
@@ -835,7 +841,7 @@ if __name__ == "__main__":
 
             writer.writerow([i['origurl'],title,description,keywords,htext,','.join(i['params']),i['category']])
     import pandas
-    pddata = pandas.read_csv(open(os.getcwd()+annotdata, 'r'), sep=';', quotechar="'")
+    pddata = pandas.read_csv(open(os.getcwd()+notdata, 'r'), sep=';', quotechar="'")
     #for sb in subjects:
     #    #html_ranking = projutilities.html_tests(sb)
     #    html_ranking = html_tests(sb)
