@@ -20,6 +20,152 @@
 # punctuation = ["\\","/", "|","(",")",".",",",":","=","{","}","==", "===","[","]","+","++","-","--","_","<",">","'","''","``",'"',"!","!=","?",";"]
 # wtbr = usual_stopwords + other_words + punctuation
 
+def date_msg(elem):
+    ##START
+    elem = elem[:10]
+    datetext = datetime.date(int(elem[:4]),int(elem[5:7]),int(elem[8:10]))
+    return datetext
+    ##END date_msg
+
+def data_collection(channel, directory):
+    ##START
+    # large limits not valid any more
+    #url = "https://api.gitter.im/v1/rooms/"+channel+"/chatMessages?limit=80000"
+    limit = 80000
+    url = "https://api.gitter.im/v1/rooms/"+channel+"/chatMessages?limit=100"
+    apikey = config.config.gitterapikey
+    gitterheader = {
+        "User-Agent": "freecodecamp project (@evaristoc github) Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:38.0) Gecko/20100101 Firefox/38.0",
+        "Content-Type": "Application/json",
+        "Accept": "application/json",
+        "Authorization":"Bearer "+apikey
+        }
+    req = urllib.request.Request(url, headers=gitterheader)
+    resp = urllib.request.urlopen(req)
+    respData = resp.read()
+    r = json.loads(respData.decode("utf-8"))
+    rep = 1
+    print(len(r))
+    print(r[0]['sent'])
+    print(r[0]['id'])
+    print(sys.getsizeof(r))
+    rdumped = r
+    print(rep)
+    print()
+    print()
+    try:
+        while rep < limit:
+            url_seek = url+"&beforeId="+r[0]['id']
+            req = urllib.request.Request(url_seek, headers=gitterheader)
+            resp = urllib.request.urlopen(req)
+            respData = resp.read()
+            r = json.loads(respData.decode("utf-8"))
+            rep += 1
+            print(len(r))
+            if len(r) == 0:
+                break
+            print(r[0]['sent'])
+            print(r[0]['id'])
+            print(sys.getsizeof(r))
+            rdumped = r + rdumped
+            print(rep)
+            if date_msg(r[0]["sent"]) - LOWERLIMITmsg < datetime.timedelta(0):
+                break
+            print()
+            print()
+    except:
+        raise
+    finally:
+        with open(directory+"/"+title[ic]+"2_test.pkl", "bw") as f_out:
+            pickle.dump(rdumped, f_out)
+    ##END data_collection           
+
+def links_analysis(raw):
+    d = {} #net location : [params, query, user, sent]    
+    for elem in raw:
+        if elem["fromUser"]["username"] == "camperbot": continue
+
+        for u in elem["urls"]:
+            url = u['url']
+            try:
+                netloc,params,urlq = urllib.parse.urlsplit(url)[1:4]
+            except:
+                print(url)
+                continue
+
+            if netloc in ("files.gitter.im", "gitter.im", "codepen.io", "reddit.com", "www.youtube.com", "github.com"): continue
+            if netloc not in list(d.keys()):
+                d[netloc] = []
+            #d[netloc].append({'params':params, 'urlq':urlq, 'user':elem['fromUser']['username'], 'urls': elem['urls'], 'text': elem['text'], 'sent': elem['sent']})
+            d[netloc].append({'params':params, 'urlq':urlq, 'user':elem['fromUser']['username'], 'urls': elem['urls'], 'url1': url, 'text': elem['text'], 'sent': elem['sent']})
+    
+ 
+    b = set()
+    dd = {} #first_param:{last,count}
+    for ll in d.keys():
+        for l in d[ll]:
+            params = l['params']
+            if len(params.split('/')) > 2:
+                first_param = ll
+                date = l['sent'].split('-')
+                year = int(date[0])
+                month = int(date[1])
+                day = int(date[2].split('T')[0])
+                current = datetime.datetime(year, month, day)
+                if params.find('FreeCodeCamp')==-1:
+                    #print(params)
+                    #if params != '':
+                    #    b.add(params.split('/')[1])
+                    if first_param not in dd:
+                        dd[first_param] = {}
+                        dd[first_param]['count1'] = 1
+                        if year == 2016:
+                            dd[first_param]['count2'] = month - 6
+                        elif year == 2017:
+                            dd[first_param]['count2'] = month + 7
+                        dd[first_param]['last'] = current
+                        dd[first_param]['repos'] = {}
+                    if params not in dd[first_param]['repos']: 
+                        dd[first_param]['repos'][params] = {}
+                        dd[first_param]['repos'][params]['count1'] = 1
+                        dd[first_param]['repos'][params]['texts'] = []
+                        dd[first_param]['repos'][params]['users'] = []
+                        dd[first_param]['repos'][params]['urls'] = []
+                        if year == 2016:
+                            dd[first_param]['repos'][params]['count2'] = month - 6
+                        elif year == 2017:
+                            dd[first_param]['repos'][params]['count2'] = month + 7
+                        dd[first_param]['repos'][params]['last'] = current
+                        dd[first_param]['repos'][params]['texts'].append(l['text'])
+                        dd[first_param]['repos'][params]['users'].append(l['user'])
+                        dd[first_param]['repos'][params]['urls'].append(l['urls'])
+    
+                    if current - dd[first_param]['last'] >= datetime.timedelta(days=1):
+                        dd[first_param]['count1'] += 1
+                        if year == 2016:
+                            dd[first_param]['count2'] += month - 6
+                        if year == 2017:
+                            dd[first_param]['count2'] += month + 7
+                        dd[first_param]['last'] = current
+                    if current - dd[first_param]['repos'][params]['last'] >= datetime.timedelta(days=1):
+                        dd[first_param]['repos'][params]['count1'] += 1
+                        if year == 2016:
+                            dd[first_param]['repos'][params]['count2'] += month - 6
+                        elif year == 2017:
+                            dd[first_param]['repos'][params]['count2'] += month + 7
+                        dd[first_param]['repos'][params]['last'] = current                        
+                        dd[first_param]['repos'][params]['texts'].append(l['text'])
+                        dd[first_param]['repos'][params]['users'].append(l['user'])
+                        dd[first_param]['repos'][params]['urls'].append(l['urls'])
+        
+    for k in sorted(dd, key=lambda k: dd[k]['last'].timestamp(), reverse=False):
+        if dd[k]['count1'] > 5:
+            print("link: {0} -- counts: {1}, weighted counts: {2}; rating: {3:.2f}".format(k, dd[k]['count1'], dd[k]['count2'], 100*dd[k]['count2']/(11*dd[k]['count1'])))
+    
+    return d, dd
+
+
+
 def cv():
     '''
     this is a word count!!
@@ -754,10 +900,10 @@ if __name__ == "__main__":
     
     channels = [
     #     {"id":"546fd572db8155e6700d6eaf","name":"FreeCodeCamp/Freecodecamp"},
-    #     {"id":"5695eb3e16b6c7089cc24e10","name":"FreeCodeCamp/HelpBackEnd"},
+         {"id":"5695eb3e16b6c7089cc24e10","name":"FreeCodeCamp/HelpBackEnd"},
     #     {"id":"5695e9a116b6c7089cc24db5","name":"FreeCodeCamp/HelpJavaScript"},
     #     {"id":"5695eab116b6c7089cc24de2","name":"FreeCodeCamp/HelpFrontEnd"},
-         {"id":"54a2fa80db8155e6700e42c3","name":"FreeCodeCamp/Help"},
+    #     {"id":"54a2fa80db8155e6700e42c3","name":"FreeCodeCamp/Help"},
          ]
     
     title = [
@@ -765,15 +911,21 @@ if __name__ == "__main__":
             #"helpbackend1",
             #"helpjavascript1",
             #"helpfrontend1",
-            "help1",
+            #"help1",
              ]
     
     
     #annotdata = '/data/annotatedplatformsphase1.csv'
     #annotdata = '/data/notatedplatformsphase1.csv'
-    annotdata = '/data/annotatedplatformsphase1_a2.csv'
-    notdata = '/data/notatedplatformsphase1_a2.csv'
+    #annotdata = '/data/annotatedplatformsphase1_a2.csv'
+    #notdata = '/data/notatedplatformsphase1_a2.csv'
 
+
+    #LOWERLIMITmsg = datetime.date(2016,5,1) #python test
+    #UPPERLIMITmsg = datetime.date(2017,5,31) #python test
+    LOWERLIMITmsg = datetime.date(2017,6,1) #python test
+    UPPERLIMITmsg = datetime.date(2017,7,31) #python test
+    EXCLUDEDmsgs = [""]
 
     def create_global_db():
         global db
@@ -786,7 +938,9 @@ if __name__ == "__main__":
     
     for ic, channel in enumerate(channels):
         print(channel["name"])
-        #data_collection(channel["id"], directory)
+        data_collection(channel["id"], directory)
+        sys.exit()
+        
         with open(directory+title[ic]+"_test.pkl", "rb") as infile:
             raw = pickle.load(infile)
             #projutilities.links_extraction_phase1(raw, title[ic])
