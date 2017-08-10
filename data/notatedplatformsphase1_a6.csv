@@ -1,0 +1,106 @@
+;platform;title;description;keywords;htext;params;category;wiki;alltext;jscheck;docscheck;blogscheck;commcheck
+0;performancejs.com;PerformanceJS | All Posts; ; ;If you wrote in Scala or Haskell before you tried TypeScript, you may have found yourself wondering: Where are the Options at? PerformanceJS a blog by Boris Cherny ;/post/hde6d32/The-Best-Frontend-JavaScript-Interview-Questions-%28written-by-a-Frontend-Engineer%29;;;  may haskell typescript posts javascript found wrote questions boris wondering best performancejs scala cherny tried blog options post engineer interview frontend hde6d32;1;0;0;0
+1;honestdot.com;Honest Dot Design;SOLVE DESIGN PROBLEMS, FOR SMALL BUSINESSES AND STARTUPS.; ;Solve design problems, for small businesses and startups. ;/blog/tag/butns-css/;;;  butns small startups businesses honest blog dot tag problems solve css design;0;0;0;0
+2;www.syncfusion.com;'
+    .NET Components & Controls | Enterprise Development Solutions by Syncfusion
+';'With Syncfusion, developers can move beyond simply coding applications to delivering business innovation—the elegant user interfaces, business intelligence dashboards, and sophisticated reporting that today''s business users need, in the formats they demand.';.NET Components and Controls, Syncfusion;'Sorry, an error occurred while attempting to log in. 
+                                ESSENTIAL STUDIO 2017 VOLUME 3 
+ 
+                            Build incredible software using 800+ controls, the unique Syncfusion Data Platform, and more
+                         ';/resources/techportal/details/ebooks/Reactjs_Succinctly;;;  volume business interfaces dashboards development resources attempting demand delivering syncfusion occurred platform coding reporting components error innovation user need controls using intelligence move unique data build developers incredible applications sophisticated simply net log users formats software ebooks today details solutions techportal succinctly essential beyond elegant enterprise reactjs sorry studio;0;0;0;0
+3;wind-bow.glitch.me;FCC Twitch API pass-through; ; ;'
+    USAGE:
+    Replace the Twitch API base URL https://api.twitch.tv/kraken with
+    https://wind-bow.gomix.me/twitch-api. Use this endpoint according to the 
+    Twitch API documentation.
+    NOTE:This server caches data to lower the request rate. To prevent abuses this server accepts GET requests only, and serves only routes /users/:user, /channels/:channel, and /streams/:stream. These are more than enough to complete the challenge.
+   Free Code Camp Twitch API Pass-through ';/twitch-api/streams/RobotCaleb;;;  according base stream robotcaleb get rate requests twitch prevent user complete https use documentation accepts kraken api data free serves channel endpoint lower routes camp fcc wind request channels code url usage note caches enough server users gomix abuses replace pass challenge streams bow;0;0;0;0
+4;smacss.com;Home - Scalable and Modular Architecture for CSS; ; ;'I’ve been analyzing my process (and the process of those around me) and figuring out how best to structure code for projects on a larger scale. What I''ve found is a process that works equally well for sites small and large. Scalable and Modular Architecture for CSS ';/book/categorizing;;;  large projects larger analyzing process around found works small sites figuring best scale modular book architecture css code equally scalable structure home well categorizing;0;0;0;0
+5;www.hscripts.com;Free Webmaster Resources | Free Scripts | Web Tools;Free Webmaster Resources Online. Build your website with our easy webpage builder, free scripts, web tools, web services, clipart images, icons, tutorials, and free website content. Free web design and applications.;Free webmaster resources, webmaster resource, web master, free scripts, web tools, tutorials, online tutorial, free clipart, free images, web icons, web design and applications, web design, application, codes and snippets,;'
+			We welcome you to Hscripts.com. Praised as the best free webmaster resources online, by our users. If you are designing a website, then you can find all the resources you need for webmasters and web developers such as free scripts, web tools, programming tutorials, web design and applications, clipart images, web icons etc. Free website contents that help to develop, build, promote and maintain a web site. 
+		 Free Webmaster Resources ';/tutorials/html/form-radiobutton.php;;;  promote images webmasters resources clipart tutorials content radiobutton services webmaster easy designing contents html master codes help need application hscripts find best form snippets build free online developers icons builder resource develop applications website programming com tutorial tools welcome maintain site users webpage scripts php etc web praised design;0;0;0;0
+6;stateofjs.com;State Of JavaScript: The State Of JavaScript;A short survey about current popular JavaScript technologies.; ;The survey is now closed. Thanks to the 20,000+ developers who took part!  Help Spread the Word! ;/2016/testing/,/2016/frontend/;;;  spread part javascript help survey developers popular technologies took thanks word testing current short closed state frontend;1;0;0;0
+7;www.williammalone.com; ; ; ; ;/articles/create-html5-canvas-javascript-sprite-animation/;;;  sprite canvas html5 javascript articles animation create;0;0;0;0
+8;ru.wikipedia.org;Википедия — свободная энциклопедия; ; ; Заглавная страница Избранная статья ;/w/api.php;;The Russian Wikipedia (Russian: Ру́сская Википе́дия) is the Russian-language edition of Wikipedia. As of August, 2017, it has 1,411,656 articles. It was started on 11 May 2001. In October 2015 it became the sixth-largest Wikipedia by the number of articles. It has the fifth-largest number of edits (99.2 million).;  api php w;0;0;0;0
+9;www.thoughtco.com;'ThoughtCo.com is the World''s Largest Education Resource';From chemistry to computer programming, arts to World War II, ThoughtCo.com provides guides, tips, and resources to help you understand more about the world around us.; ;List SCIENCE, TECH, MATH ;/nesting-html-tags-3466475;;;  nesting science resources education math around html tags understand war help tips thoughtco largest computer guides resource provides programming com ii us list chemistry arts world tech;0;0;0;0
+10;react-bootstrap.github.io;React-Bootstrap; ; ;The most popular front-end framework, rebuilt for React. ;/;;GitHub is a web-based Git or version control repository and Internet hosting service. It is mostly used for code. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.;  rebuilt front popular framework react end bootstrap;0;0;0;0
+11;ourcodeworld.com; ; ; ; ;/articles/read/200/top-7-best-free-web-development-ide-for-javascript-html-and-css;;;  html css development ide read web javascript best articles free top;0;0;0;0
+12;www.crhallberg.com;Chris Hallberg: The Website; ; ;Chris Hallberg Featured ;/cah/json/;;;  json hallberg website chris cah featured;0;0;0;0
+13;code.divshot.com; ; ; ; ;/geo-bootstrap;;;  geo bootstrap;0;0;0;0
+14;gleapis.com; ; ; ; ;/css;;;  css;0;0;0;0
+15;ascii.cl; ; ; ; ;/htmlcodes.htm;;;  htmlcodes htm;0;0;0;0
+16;html.spec.whatwg.org;HTML Standard; ; ;Spec bugs: 23036 HTML Living Standard — Last Updated 9 August 2017 ;/multipage/syntax.html;;;  spec html standard syntax last living multipage updated bugs august;0;0;0;0
+17;t3n.de;t3n – digital pioneers | Das Magazin für digitales Business;t3n ist das Print- und Online Magazin mit News und Artikeln zu den Themen E-Business, Social Media, Web-Technologie und -Design sowie digitale Zukunftsthemen.; ;'Du hast deinen AdBlocker an? 
+t3n - digital pioneers
+
+
+
+
+
+ 
+
+                    Warum Netflix über die Disney-Kündigung noch lachen wird
+                
+ ';/news/butns-schaltflaechen-css-790422/;;;  lachen adblocker k business das magazin digitales themen netflix artikeln deinen den zukunftsthemen und news social print e warum r f ist online wird media css butns ber hast zu noch sowie mit t3n du ndigung technologie digital die disney web schaltflaechen pioneers digitale design;0;0;0;0
+18;fcc-weather-api.glitch.me;FCC Weather API pass-through; ; ;'
+    USAGE:
+    Use the endpoint: https://fcc-weather-api.glitch.me/. Use this endpoint to get the weather at a location.
+    To prevent abuses this server accepts GET requests only, and serves only the route /api/current?lon=:longitude&lat=:latitude. Images links are included in the JSON under weather[0].icon. This is enough to complete the challenge.
+    
+    Example:
+    
+    Requets: https://fcc-weather-api.glitch.me/api/current?lat=35&lon=139
+
+    Response: {
+   "coord":{
+      "lon":159,
+      "lat":35
+   },
+   "weather":[
+      {
+         "id":500,
+         "main":"Rain",
+         "description":"light rain",
+         "icon":"https://cdn.glitch.com/6e8889e5-7a72-48f0-a061-863548450de5%2F10n.png?1499366021399"
+      }
+   ],
+   "base":"stations",
+   "main":{
+      "temp":22.59,
+      "pressure":1027.45,
+      "humidity":100,
+      "temp_min":22.59,
+      "temp_max":22.59,
+      "sea_level":1027.47,
+      "grnd_level":1027.45
+   },
+   "wind":{
+      "speed":8.12,
+      "deg":246.503
+   },
+   "rain":{
+      "3h":0.45
+   },
+   "clouds":{
+      "all":92
+   },
+   "dt":1499521932,
+   "sys":{
+      "message":0.0034,
+      "sunrise":1499451436,
+      "sunset":1499503246
+   },
+   "id":0,
+   "name":"",
+   "cod":200
+}
+ Free Code Camp Weather API Pass-through ';/api/current;;;  lat dt description use glitch accepts serves enough example abuses lon rain cod max challenge json images response get requests requets prevent api camp fcc wind code temp icon light main a061 location deg sunrise https speed pressure sea latitude route current stations links id longitude name min included cdn base level coord complete free png endpoint sunset com humidity sys usage grnd server message weather pass clouds;0;0;0;0
+19;madoxweb.com;MadoxWeb Internet Marketing - SEO & Marketing Online;SEO & Marketing Online; ;'
+
+ 10 WordPress Themes for Startups and Small Businesses ';/add-pre-designed-buttons-to-your-site-with-butns-css/;;;  startups madoxweb designed small buttons businesses wordpress marketing online css internet seo butns add site pre themes;0;0;0;0
+20;nodesource.com;'NodeSource — Node.js that''s Secure, Reliable, and Extensible';Node.js Support, Training and Consulting for the Enterprise, Worldwide;node.js, nodejs, node, support, training, consulting, hardware, API;A fully compatible Node.js runtime enhanced to address the needs of the enterprise. The fully-compatible Node.js runtime built for mission-critical applications NodeSource is the Node.js company enabling the safest and most secure way to run Node.js. ;/blog/installing-node-js-tutorial-debian-linux/;;;  needs fully safest debian worldwide reliable installing node enhanced training runtime run company api consulting critical way hardware applications nodesource compatible address blog linux extensible tutorial built js mission support enterprise secure enabling nodejs;0;0;0;0
+21;tinyurl.com;TinyURL.com - shorten that long URL into a tiny URL; ; ;'Are you sick of posting URLs in emails only to have it break when sent causing the recipient to have to cut and paste it back together? Then you''ve come to the right place. By entering in a URL in the text field below, we will create a tiny URL that will not break in email postings and never expires.  Welcome to TinyURL!™ ';/y92js8aj;;TinyURL is a URL shortening web service, which provides short aliases for redirection of long URLs. Kevin Gilbertson, a web developer, launched the service in January 2002 so he would be able to post links in newsgroup postings which frequently had long, cumbersome addresses.;  field text paste cut expires recipient entering tinyurl postings create together long y92js8aj causing place shorten sent posting back tiny com sick url never welcome urls email break come right emails;0;0;0;0
+22;liveweave.com;HTML5, CSS3 and JavaScript demo - Liveweave;Liveweave is a HTML5, CSS3 & JavaScript playground for web designers and developers;HTML, HTML5, CSS, CSS3, JavaScript, jquery, jquery UI, web designer, designer, web developer, developer;  Initializing... ;/;;;  developers liveweave html demo initializing html5 jquery designer web javascript designers playground developer css3 ui css;0;0;0;0
+23;www.concretepage.com; ; ; ; ;/angular-2/angular-2-ngfor-example;;;  angular example ngfor;0;0;0;0
+24;preactjs.com;Preact: Fast 3kb React alternative with the same ES6 API. Components & Virtual DOM.; ; ;Edit this PageLanguage:EnglishChineseSpanishBrazilian Portuguese Home ;/;;;  preact fast portuguese components pagelanguage home virtual edit es6 englishchinesespanishbrazilian dom alternative api react;1;0;0;0
+25;the http:; ; ; ; ;//getbootstrap.com/css/;;;  com getbootstrap css;0;0;0;0

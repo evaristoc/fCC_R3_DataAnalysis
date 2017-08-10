@@ -1,0 +1,26 @@
+;platform;title;description;keywords;htext;params;category;wiki;alltext;jscheck;docscheck;blogscheck;commcheck
+0;lunrjs.com;Lunr: A bit like Solr, but much smaller and not as bright; ; ;Designed to be small, yet full featured, Lunr enables you to provide a great search experience without the need for external, server-side, search services. Lunr Search made simple ;/;;;  lunr solr much services side yet designed small full need smaller experience made great enables without simple like server bright provide bit search external featured;1;0;0;0
+1;doc.ubuntu-fr.org;Accueil - Documentation Ubuntu Francophone; ;Accueil;'
+Pour la parcourir, n''hésitez pas à utiliser la barre de recherche en haut à droite de cette page.
+ Ubuntu-fr Accueil ';/nodejs;;;  recherche francophone cette sitez fr accueil n documentation droite haut nodejs pour page de utiliser parcourir en pas ubuntu h barre;0;0;0;0
+2;glitch.com;Glitch;The community that helps you build the app or bot of your dreams; ;'
+        To use this app, please enable JavaScript
+       ';/edit/;;Glitch was a browser-based massively multiplayer online game created by Tiny Speck. The game was developed under the leadership of Stewart Butterfield.;  community dreams edit bot javascript use helps glitch enable build please app;0;0;0;0
+3;augury.angular.io;Angular Augury;; ;Augury is the most used Google Chrome Developer Tool extension for debugging and profiling Angular 2 applications. ;/;;'Angular (commonly referred to as "Angular 2+" or "Angular 2") is a TypeScript-based open-source front-end web application platform led by the Angular Team at Google and by a community of individuals and corporations to address all of the parts of the developer''s workflow while building complex web applications. Angular is a complete rewrite from the same team that built AngularJS.';  augury tool chrome profiling angular applications used google extension developer debugging;0;0;0;0
+4;www.owasp.org;OWASP; ; ;'
+ Main Page  ';/index.php/HTML5_Security_Cheat_Sheet;;The Open Web Application Security Project (OWASP), an online community, produces freely-available articles, methodologies, documentation, tools, and technologies in the field of web application security.;  sheet page owasp cheat php html5 main security index;0;0;0;0
+5;nwjs.io;NW.js;nwjs;nw.js, nwjs, nw js, node-webkit, node, node.js, chrome, chromium, javascript;'New way of writing native applications using web technologies: HTML5, CSS3, and WebGL NW.js (previously known as node-webkit) lets you call all Node.js modules directly from DOM and enables a new way of writing applications with
+            all Web technologies. ';/;;;  webkit javascript directly webgl nwjs node lets chromium writing using dom native way previously chrome applications modules enables nw technologies known new js html5 call web css3;0;0;0;0
+6;twitter.com;Twitter. Wat er gebeurt.;Van het laatste nieuws en entertainment tot sport en politiek, je leest het hele verhaal met al het live commentaar.; ;Als je dit niet kunt inschakelen in de voorkeuren van je browser, probeer dan onze mobiele site. Wat houdt je bezig? ;/mongoosejs;;Twitter () is an online news and social networking service where users post and interact with messages, "tweets", restricted to 140 characters. Registered users can post tweets, but those who are unregistered can only read them. Users access Twitter through its website interface, SMS or a mobile device app. Twitter Inc. is based in San Francisco, California, United States, and has more than 25 offices around the world.;  wat dit als met twitter het er verhaal niet bezig mongoosejs browser de laatste commentaar houdt je entertainment inschakelen site tot politiek live voorkeuren en probeer nieuws dan onze kunt gebeurt leest van mobiele sport hele;0;0;0;0
+7;reactivex.io; ; ; ; ;/rxjs/;;;  rxjs;0;0;0;0
+8;cli.angular.io;Angular CLI;; ;The Angular CLI makes it easy to create an application that already works, right out of the box. It already follows our best practices! ;/;;'Angular (commonly referred to as "Angular 2+" or "Angular 2") is a TypeScript-based open-source front-end web application platform led by the Angular Team at Google and by a community of individuals and corporations to address all of the parts of the developer''s workflow while building complex web applications. Angular is a complete rewrite from the same team that built AngularJS.';  create box easy works makes follows application best practices already angular right cli;0;0;0;0
+9;bookshelfjs.org; ; ; ; ;/;;; ;1;0;0;0
+10;stepansuvorov.com; ; ; ; ;/blog/2014/04/jquery-put-and-delete/;;;  blog jquery delete put;0;0;0;0
+11;docs.mongodb.com;MongoDB Documentation; ; ;'
+        Connect and use MongoDB with your favorite programming language within
+        minutes.
+       Welcome to the MongoDB Docs 
+ 
+      Using MongoDB
+     ';/manual/reference/method/js-collection/;;;  docs collection connect minutes manual language using use documentation within programming reference welcome method favorite js mongodb;0;1;0;0
+12;docs.oracle.com;Moved; ; ; ;/javase/specs/jls/se7/html/jls-10.html;;Oracle Enterprise Manager (OEM or EM) is a set of web-based tools aimed at managing software and hardware produced by Oracle Corporation as well as by some non-Oracle entities.;  html se7 moved javase jls specs;0;1;0;0

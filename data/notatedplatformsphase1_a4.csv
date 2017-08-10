@@ -1,0 +1,84 @@
+;platform;title;description;keywords;htext;params;category;wiki;alltext;jscheck;docscheck;blogscheck;commcheck
+0;www.webplaces.com; ; ; ; ;/html/sounds.htm;;;  html sounds htm;0;0;0;0
+1;www.javascript.com;JavaScript;Learn JavaScript and stay connected with the latest news created and curated by the JavaScript community.; ;'Begin learning here by typing in your first name surrounded by quotation
+marks, and ending with a semicolon. For example, you could type the name
+"Jamie"; and then hit enter.
+ ';/;;;  name semicolon jamie curated community surrounded javascript begin quotation hit enter latest news created learning ending example connected stay first type could typing marks learn;0;0;0;0
+2;learn.**vanillaJS**.com; ; ; ; ;/;;; ;0;0;0;0
+3;koop4.github.io; Rob.dll Portfolio ; ; ;Rob here. ;/css/style_smartphone.css;;GitHub is a web-based Git or version control repository and Internet hosting service. It is mostly used for code. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.;  portfolio style dll rob smartphone css;0;0;0;0
+4;insights.dice.com;403 Forbidden; ; ;403 Forbidden ;/2017/07/14/4-tech-jobs-most-threatened-by-a-i/;;;  threatened forbidden jobs tech;0;0;0;0
+5;hashnode.com;Hashnode: Premier social network for software developers;Hashnode is a social network of programmers (a.k.a. software developers) to converse, connect, and share ideas on a global scale. Meet like minded developers and help each other.; ;How it works: A place to share and grow your programming knowledge 180k+ active developers 🎉 ;/post/really-responsive-tables-using-css3-flexbox-cijzbxd8n00pwvm53sl4l42cx;;;  k minded hashnode really responsive global meet converse share connect works premier social help tables knowledge using programmers scale place flexbox developers programming post like ideas grow software cijzbxd8n00pwvm53sl4l42cx active network css3;0;0;0;0
+6;codetheory.in;Code Theory – Web and Mobile Development articles;Web and Mobile Development articles;game development, mobile development, random, roundups, tools & tips, web development;Web and Mobile Development articles Code Theory My Experience With Newor Media ;/parse-read-excel-files-xls-xlsx-javascript/;;;  xls game development read javascript tips experience articles files mobile media xlsx excel code theory tools parse roundups random web newor;0;0;0;0
+7;thejackalofjavascript.com;The Jackal of Javascript | Arvind Ravulavaru;Hi, I am Arvind and this is my blog about Javascript, Web Development and Hybrid Apps.;Javascript, HTML5, CSS3, ES6, Ecmascript, Hybrid Apps, Mobile Web Development, Desktop Apps, Apps, Arvind R, Arvind Ravulavaru, The Jackal of Javascript;'
+Email *
+
+
+
+
+ The Jackal of Javascript Knowing is different & Doing is different ';/your-portfolio-website-with-github-pages/;;;  arvind ecmascript development knowing javascript ravulavaru portfolio r mobile website blog pages hybrid apps different github jackal email desktop html5 web es6 css3 hi;0;0;0;0
+8;www.virtuosoft.eu;Virtuosoft;Our goal is to help the web-developer community to provide useful tools and plugins to support their work.; ;'Virtuosoft is small but enthusiastic company located in Hungary, on the shore of Lake Balaton. It''s foundations lay on the cooperation of 
+<!--
+// Email obfuscator script 2.1 by Tim Williams, University of Arizona
+// Random encryption key feature by Andrew Moulden, Site Engineering Ltd
+// This code is freeware provided these four comment lines remain intact
+// A wizard to generate this code is at http://www.jottings.com/obfuscator/
+        {
+          coded = "gpLk3J.lCC8EpI3sap@kgsLlapaQL.El"
+          key = "3hGT05bBYsd7ilAUz8enOcRQtXjkMPaNFy6SDqWrwp2ugK9mI4EJ1fZVLvCxoH"
+          shift = coded.length
+          link = ""
+          for (i = 0; i < coded.length; i++) {
+            if (key.indexOf(coded.charAt(i)) == -1) {
+              ltr = coded.charAt(i)
+              link += (ltr)
+            }
+            else {
+              ltr = (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length
+              link += (key.charAt(ltr))
+            }
+          }
+          document.write("<a href=''mailto:" + link + "'' target=''_blank'' title=''Contact István''>István Ujj-Mészáros</a>")
+        }
+//-->
+         About Virtuosoft New on Virtuosoft ';/code/bootstrap-autohidingnavbar/;;;  goal charat ros wizard target community tim gplk3j work plugins intact blank four university write engineering tools site lines indexof useful lake lay company andrew generate sz jottings code istv cooperation new email williams balaton shift key el support remain contact lcc8epi3sap encryption ltr virtuosoft arizona script foundations kgsllapaql link else comment moulden located document obfuscator title random autohidingnavbar www shore small hungary help n ujj coded com http feature enthusiastic provide bootstrap mailto freeware web href developer length ltd provided;0;0;0;0
+9;jamesknelson.com; ; ; ; ;/react-js-by-example-interacting-with-the-dom/;;;  interacting js example dom react;0;0;0;0
+10;davetayls.me;Dave Taylor (davetayls) Front-End Developer | Dave Taylor Frontend Developer, Lead, Mentor;Frontend leadership, Frontend architecture, HTML(5), JavaScript (OOJS, ES6, TypeScript), CSS (BEM, Less, SASS, Stylus), Testable Code (Mocha, Sinon, Chai, Karma), NodeJs (Express, Mongoose) , Cloud Applications (Heroku, S3, Azure);Dave Taylor, David Taylor, Frontend leadership, Frontend architecture, HTML(5), JavaScript (OOJS, ES6, TypeScript), CSS (BEM, Less, SASS, Stylus), Testable Code (Mocha, Sinon, Chai, Karma), NodeJs (Express, Mongoose) , Cloud Applications (Heroku, S3, Azure);Building a great product is about meeting a need. Frontend Developer, Lead, Mentor Senior HTML5 Development ;/jquery.kinetic/;;;  bem typescript lead meeting development mongoose javascript less davetayls html s3 taylor david stylus dave express mocha heroku product sinon need testable cloud architecture css oojs great karma applications mentor code azure jquery senior building kinetic front sass leadership html5 chai es6 developer end frontend nodejs;0;0;0;0
+11;redvinestudio.com;Web Design / Development, Web Marketing and Consulting: red vine web studio - St. Augustine, Florida;It’s getting harder and harder for you to separate your business from the pack online, but it’s not time to give up. It’s time to do something about it. Contact red vine today to learn how!; ;It’s getting harder and harder to separate your business from the pack on the web, but it’s not time to give up. It’s not time to do just the bare minimum. Blog Design & Development ;/how-to-make-a-menu-fade-in-on-scroll-using-jquery/;;;  business development florida separate st pack marketing using online consulting fade vine blog scroll jquery red studio time make getting augustine today something bare web give harder minimum menu learn contact design;0;0;0;0
+12;www.mazda3.ca; ; ; ; ;/en/sedan/json/data.json;;;  en json data sedan;0;0;0;0
+13;www.jquery-backstretch.com; ; ; ; ;/;;; ;0;0;0;0
+14;phantomjs.org; ; ; ; ;/;;'PhantomJS is a scripted, headless browser used for automating web page interaction. PhantomJS provides a JavaScript API enabling automated navigation, screenshots, user behavior and assertions making it a common tool used to run browser-based unit tests in a headless system like a continuous integration environment. PhantomJS is based on WebKit making it a similar browsing environment to Safari and Google Chrome (before Chrome''s fork of WebKit evolved into Blink). It is open-source software released under the BSD License.'; ;1;0;0;0
+15;www.useragentman.com; ; ; ; ;/blog/2011/01/07/css3-matrix-transform-for-the-mathematically-challenged/;;;  blog transform css3 mathematically matrix challenged;0;0;0;0
+16;foundation.zurb.com;Foundation | The most advanced responsive front-end framework in the world.; ; ;'Foundation for Sites is jam-packed with features to help people rapidly build content-focused websites. Foundation for Sites provides you with HTML, CSS, & JavaScript to help you quickly prototype. It''s easy to customize & extend to get your project polished & shipped. Foundation The most advanced responsive front-end framework in the world. ';/sites/docs/installation.html;;Foundation is a responsive front-end framework. Foundation provides a responsive grid and HTML and CSS UI components, templates, and code snippets, including typography, forms, buttons, navigation and other interface elements, as well as optional functionality provided by JavaScript extensions. Foundation is maintained by ZURB and is an open source project.;  jam advanced docs responsive framework content javascript foundation get html easy project sites help focused rapidly build websites css shipped provides customize people quickly features prototype front polished packed world installation end extend;0;0;0;0
+17;codyhouse.co;CodyHouse - Free HTML, CSS, JS nuggets;A free library of HTML/CSS/Javascript resources to boost your web projects and learn new tricks.;HTML, CSS,  JS, responsive, coded, snippet;© 2017 CodyHouse. By Amber Creative. A free library of HTML, CSS, JS nuggets Latest resources ;/gem/css-mega-site-navigation/;;;  library projects responsive resources javascript html gem navigation latest mega tricks free css nuggets coded codyhouse new snippet site creative boost js amber web learn;0;0;0;0
+18;kyusuf.com;Kenan Yusuf | Front-end developer and student;Front-end developer and student; ;14th November 2016 Kenan Yusuf Front-end developer and enthusiast of web technologies ;/post/fake-it-til-you-make-it-css;;;  fake student enthusiast november css kenan til post technologies make yusuf front web developer end;0;0;0;0
+19;js-socials.com; ; ; ; ;/;;; ;0;0;0;0
+20;react-etc.net;React, etc. Tech Stack | React, Flux, GraphQL, Hack, HHVM...? All of this and more!; ; ;React, Flux, GraphQL, Hack, HHVM...? All of this and more! React, etc. Tech Stack ;/entry/your-license-to-use-react-js-can-be-revoked-if-you-compete-with-facebook;;;  stack revoked compete hhvm license entry use react facebook flux js etc tech hack graphql;0;0;0;0
+21;css-infos.net;CSS Infos;CSS Infos; ;'
+
+
+ CSS properties ';/property/-webkit-margin-start;;;  property margin infos webkit start css properties;0;0;0;0
+22;plugins.jquery.com;jQuery Plugin Registry;; ;We recommend moving to npm, using "jquery-plugin" as the keyword in your package.json. The npm blog has instructions for publishing your plugin to npm. The jQuery Plugin Registry jQuery Plugin Registry ;/color/;;jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. It is free, open-source software using the permissive MIT license. Web analysis indicates that it is the most widely deployed JavaScript library by a large margin.;  json moving using keyword color recommend publishing blog jquery instructions registry plugin npm package;0;0;0;0
+23;www.virendrachandak.com;Virendra Chandak;Lead Developer, Blogger; ;'Copyright © 2011 - 2017 Virendra''s TechTalk | Disclaimer | Privacy Virendra''s TechTalk ';/techtalk/sticky-header-and-footer-using-css/;;;  privacy chandak sticky header disclaimer blogger developer copyright using techtalk lead footer css virendra;0;0;0;0
+24;api.musixmatch.com;404 Not Found; ; ;The requested URL / was not found on this server. Not Found ;/ws/1.1/artist.albums.get;;'Musixmatch is the world''s largest lyrics platform where users can search and share lyrics. It has 60 million users, 14 million lyrics and 30 employees.';  get ws artist url albums server requested found;0;0;0;0
+25;www.html5tutorial.info;'
+HTML5 Tutorial - Welcome '; ;HTML, HTML5, tutorial, HTML5 Tutorial, CSS, CSS3, Webform 2.0, Semantic, Canvas, Audio, Video, DataList, Required field, Autofocus;'
+Back in 2011, almost everyone in the world was saying HTML5 will bring
+revolutionary change to the web.
+ HTML5 Tutorial ';/html5-range.php;;;  video bring html autofocus change saying css canvas back webform tutorial almost required welcome datalist everyone php html5 revolutionary semantic audio world web range field css3;0;0;0;0
+26;www.appneta.com;End-User Experience and Network Monitoring | AppNeta;'Appneta''s award-winning suite of application performance management tools ensure optimized web app, SaaS app and end-user monitoring. See a free demo today.'; ;End-user application monitoring from where your users are 100% Application Delivery Confidence  SaaS-based application and network performance monitoring for any cloud, every user, and all locations   Experience ;/blog/bootstrap-pagespeed/;;AppNeta is a computer software company headquartered in Boston, Massachusetts, with research and development based in Vancouver, British Columbia.;  see locations appneta saas based confidence user application ensure experience cloud free demo award blog optimized delivery monitoring tools users suite app bootstrap pagespeed today every network performance web winning management end;0;0;0;0
+27;w3c.github.io;W3C on GitHub; ; ;'
+    The purpose of this page is to progressively list the resources useful when working on
+    W3C projects using GitHub.
+    The following links should help you find your way.
+    Refer to the FAQ for details about the breadth and scope of W3C projects.
+   W3C on GitHub ';/html/browsers.html;;;  faq projects useful resources breadth following purpose html help find using scope way page w3c refer github progressively details links working list browsers;0;0;0;0
+28;www.mikedoesweb.com; ; ; ; ;/2012/creating-your-own-javascript-library/;;;  library creating javascript;0;0;0;0
+29;api.**vanillaJS**.com; ; ; ; ;/;;; ;0;0;0;0
+30;www.thenetninja.co.uk;The Net Ninja - Free development tutorials - Node.js, html, css, JavaScript;Free front-end and back-end, premium web development tutorials on JavaScript, Node.js and more.; ;All of the tutorials are uploaded to the Net Ninja YouTube channel, so be sure to subscribe to catch all the latest releases. The Net Ninja Kung Fu  Your Web Skills ;/courses/css-flexbox-tutorial;;.uk is the Internet country code top-level domain (ccTLD) for the United Kingdom of Great Britain and Northern Ireland. As of February 2016, it is the fifth most popular top-level domain worldwide (after .com, .cn, .de and .net), with over 10 million registrations.;  subscribe sure development tutorials javascript courses youtube html catch node latest free css flexbox channel back ninja net tutorial releases premium front kung uploaded skills js fu web end;0;0;0;0
+31;www.schillmania.com; ; ; ; ;/content/projects/javascript-animation-1/;;;  projects content javascript animation;0;0;0;0
+32;www.mercurynewmedia.com; ; ; ; ;/blog/mercury-new-media-blog/2016/09/08/bootstrap-4-vs.-bootstrap-3;;;  media mercury blog new vs bootstrap;0;0;0;0
+33;www.simplehtmlguide.com; ; ; ; ;/cheatsheet.php;;;  php cheatsheet;0;0;0;0
+34;cdn.cryptowat.ch;Cryptowatch - live Bitcoin price charts;Live price charts and market data for Bitcoin, Ethereum, and more; ; ;/generate/styles/index.000000.b2b2b2.e5e5e5.7f7f7f.C60606.00B909.363D52.414A67.FFD506.ac15f10a8e8ee795411ddcb98d4cb52b4a4fc3ea.css;;;  bitcoin market e5e5e5 charts price ethereum ffd506 styles generate data css ac15f10a8e8ee795411ddcb98d4cb52b4a4fc3ea cryptowatch live b2b2b2 c60606 index;0;0;0;0
+35;code.reloado.com; ; ; ; ;/owopuc4/edit;;;  edit owopuc4;0;0;0;0
+36;api.**vanillaJS.com**; ; ; ; ;/category/manipulation/;;;  manipulation category;0;0;0;0
+37;blogs.quovantis.com; ; ; ; ;/understanding-the-css3-flexbox/;;;  css3 understanding flexbox;0;0;1;0

@@ -76,7 +76,7 @@ def data_collection(channel, directory):
     except:
         raise
     finally:
-        with open(directory+"/"+title[ic]+"2_test.pkl", "bw") as f_out:
+        with open(directory+"/"+title[ic]+"_test.pkl", "bw") as f_out:
             pickle.dump(rdumped, f_out)
     ##END data_collection           
 
@@ -900,10 +900,10 @@ if __name__ == "__main__":
     
     channels = [
     #     {"id":"546fd572db8155e6700d6eaf","name":"FreeCodeCamp/Freecodecamp"},
-         {"id":"5695eb3e16b6c7089cc24e10","name":"FreeCodeCamp/HelpBackEnd"},
+    #     {"id":"5695eb3e16b6c7089cc24e10","name":"FreeCodeCamp/HelpBackEnd"},
     #     {"id":"5695e9a116b6c7089cc24db5","name":"FreeCodeCamp/HelpJavaScript"},
     #     {"id":"5695eab116b6c7089cc24de2","name":"FreeCodeCamp/HelpFrontEnd"},
-    #     {"id":"54a2fa80db8155e6700e42c3","name":"FreeCodeCamp/Help"},
+         {"id":"54a2fa80db8155e6700e42c3","name":"FreeCodeCamp/Help"},
          ]
     
     # title = [
@@ -916,17 +916,24 @@ if __name__ == "__main__":
 
     title = [
             #freecodecamp3,
-            "helpbackend2",
+            #"helpbackend2",
             #"helpjavascript2",
             #"helpfrontend2",
-            #"help2",
+            "help2",
              ]    
     
     #annotdata = '/data/annotatedplatformsphase1.csv'
     #annotdata = '/data/notatedplatformsphase1.csv'
     #annotdata = '/data/annotatedplatformsphase1_a2.csv'
     #notdata = '/data/notatedplatformsphase1_a2.csv'
-
+    #annotdata = '/data/annotatedplatformsphase1_a3.csv'
+    #notdata = '/data/notatedplatformsphase1_a3.csv'
+    #annotdata = '/data/annotatedplatformsphase1_a4.csv'
+    #notdata = '/data/notatedplatformsphase1_a4.csv'
+    #annotdata = '/data/annotatedplatformsphase1_a5.csv'
+    #notdata = '/data/notatedplatformsphase1_a5.csv'
+    annotdata = '/data/annotatedplatformsphase1_a6.csv'
+    notdata = '/data/notatedplatformsphase1_a6.csv'
 
     #LOWERLIMITmsg = datetime.date(2016,5,1) #python test
     #UPPERLIMITmsg = datetime.date(2017,5,31) #python test
@@ -946,7 +953,7 @@ if __name__ == "__main__":
     for ic, channel in enumerate(channels):
         print(channel["name"])
         data_collection(channel["id"], directory)
-        sys.exit()
+        #sys.exit()
         
         with open(directory+title[ic]+"_test.pkl", "rb") as infile:
             raw = pickle.load(infile)
