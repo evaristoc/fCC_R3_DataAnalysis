@@ -370,7 +370,11 @@ def links_extraction_phase1(raw, source, annotdata):
 
             #assert platform != 'azmind.com', (platform, source)
             
-            if platform not in list(classedplatforms.keys()):
+            #if platform not in list(classedplatforms.keys()): #<--------------------- USE THIS IS SEARCHING FOR NEW!!
+            if platform in list(classedplatforms.keys()):      #<--------------------- USE THIS IS SEARCHING FOR THE ALREADY SELECTED ONLY!!
+                #print(platform)
+                assert platform, print(plaftform)
+                
                 if platform == 'forum.freecodecamp.com' and params in ["/fcc-relaxing-cat", "/t/free-code-camp-official-chat-rooms/19390", "/t/free-code-camp-official-chat-rooms", "/t/free-code-camp-brownie-points/18380", "/t/markdown-code-formatting/18391"]:
                     continue
 
@@ -421,18 +425,18 @@ def links_extraction_phase1(raw, source, annotdata):
                     db["platformstable"][platform]['frequency-recency'].append(month + 7)
 
                 #textstable
-                if elem["id"] not in db["textstable"].keys():
-                    db["textstable"][elem["id"]] = {}
-                    db["textstable"][elem["id"]]["text"] = elem["text"]
-                    db["textstable"][elem["id"]]["source"] = source
-                    db["textstable"][elem["id"]]["user"] = elem["fromUser"]["username"]
-                    db["textstable"][elem["id"]]["sent"] = elem["sent"]
-                    db["textstable"][elem["id"]]["prestige"] = 1
-                    db["textstable"][elem["id"]]["urls"] = elem["urls"]
-                    db["textstable"][elem["id"]]["platforms"] = set()
-                    db["textstable"][elem["id"]]["created"] = ""
-                    db["textstable"][elem["id"]]["modified"] = ""
-                db["textstable"][elem["id"]]["platforms"].update((platform, "sentiment"))
+                # if elem["id"] not in db["textstable"].keys():
+                #     db["textstable"][elem["id"]] = {}
+                #     db["textstable"][elem["id"]]["text"] = elem["text"]
+                #     db["textstable"][elem["id"]]["source"] = source
+                #     db["textstable"][elem["id"]]["user"] = elem["fromUser"]["username"]
+                #     db["textstable"][elem["id"]]["sent"] = elem["sent"]
+                #     db["textstable"][elem["id"]]["prestige"] = 1
+                #     db["textstable"][elem["id"]]["urls"] = elem["urls"]
+                #     db["textstable"][elem["id"]]["platforms"] = set()
+                #     db["textstable"][elem["id"]]["created"] = ""
+                #     db["textstable"][elem["id"]]["modified"] = ""
+                # db["textstable"][elem["id"]]["platforms"].update((platform, "sentiment"))
 
                 #userstable
                 if elem['fromUser']['username'] not in list(db['userstable'].keys()):
@@ -900,40 +904,41 @@ if __name__ == "__main__":
     
     channels = [
     #     {"id":"546fd572db8155e6700d6eaf","name":"FreeCodeCamp/Freecodecamp"},
-    #     {"id":"5695eb3e16b6c7089cc24e10","name":"FreeCodeCamp/HelpBackEnd"},
-    #     {"id":"5695e9a116b6c7089cc24db5","name":"FreeCodeCamp/HelpJavaScript"},
-    #     {"id":"5695eab116b6c7089cc24de2","name":"FreeCodeCamp/HelpFrontEnd"},
-         {"id":"54a2fa80db8155e6700e42c3","name":"FreeCodeCamp/Help"},
+         {"id":"5695eb3e16b6c7089cc24e10","name":"FreeCodeCamp/HelpBackEnd"},
+         {"id":"5695e9a116b6c7089cc24db5","name":"FreeCodeCamp/HelpJavaScript"},
+         {"id":"5695eab116b6c7089cc24de2","name":"FreeCodeCamp/HelpFrontEnd"},
+    #     {"id":"54a2fa80db8155e6700e42c3","name":"FreeCodeCamp/Help"},
          ]
     
-    # title = [
-    #         #freecodecamp2,
-    #         #"helpbackend1",
-    #         #"helpjavascript1",
-    #         #"helpfrontend1",
-    #         #"help1",
-    #          ]
-
     title = [
-            #freecodecamp3,
-            #"helpbackend2",
-            #"helpjavascript2",
-            #"helpfrontend2",
-            "help2",
-             ]    
+            #freecodecamp2,
+            "helpbackend1",
+            "helpjavascript1",
+            "helpfrontend1",
+            #"help1",
+             ]
+
+    # title = [
+    #         #freecodecamp3,
+    #         #"helpbackend2",
+    #         #"helpjavascript2",
+    #         #"helpfrontend2",
+    #         #"help2",
+    #          ]    
     
     #annotdata = '/data/annotatedplatformsphase1.csv'
     #annotdata = '/data/notatedplatformsphase1.csv'
     #annotdata = '/data/annotatedplatformsphase1_a2.csv'
     #notdata = '/data/notatedplatformsphase1_a2.csv'
-    #annotdata = '/data/annotatedplatformsphase1_a3.csv'
+    annotdata = '/data/annotatedplatformsphase1_a3.csv'
     #notdata = '/data/notatedplatformsphase1_a3.csv'
+    notdata = '/data/notatedplatformsphase1_a3TEST.csv'
     #annotdata = '/data/annotatedplatformsphase1_a4.csv'
     #notdata = '/data/notatedplatformsphase1_a4.csv'
     #annotdata = '/data/annotatedplatformsphase1_a5.csv'
     #notdata = '/data/notatedplatformsphase1_a5.csv'
-    annotdata = '/data/annotatedplatformsphase1_a6.csv'
-    notdata = '/data/notatedplatformsphase1_a6.csv'
+    #annotdata = '/data/annotatedplatformsphase1_a6.csv'
+    #notdata = '/data/notatedplatformsphase1_a6.csv'
 
     #LOWERLIMITmsg = datetime.date(2016,5,1) #python test
     #UPPERLIMITmsg = datetime.date(2017,5,31) #python test
@@ -952,7 +957,7 @@ if __name__ == "__main__":
     
     for ic, channel in enumerate(channels):
         print(channel["name"])
-        data_collection(channel["id"], directory)
+        #data_collection(channel["id"], directory)
         #sys.exit()
         
         with open(directory+title[ic]+"_test.pkl", "rb") as infile:
@@ -963,6 +968,7 @@ if __name__ == "__main__":
         try:
             with open(directory+title[ic]+"_treateddata_links.pkl", "rb") as infile:
                 botdata = pickle.load(infile)
+                print('botdata length', len(botdata))
                 #projutilities.completing_db_with_data_from_botandcv(botdata)
         except (FileNotFoundError):
             print("A FILE ERROR has been found for ", title[ic], ". The `*_treateddata_links.pkl` might not exists.")
