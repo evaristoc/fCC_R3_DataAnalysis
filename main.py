@@ -670,7 +670,7 @@ def pyrebase_conn_test():
     #import firebase_admin
     import pyrebase
 
-    dbconfig = config.dbconfig
+    dbconfig = config.config.dbconfig
 
     
 
@@ -713,7 +713,7 @@ def pyrebase_conn(data):
     #import firebase_admin
     import pyrebase
 
-    dbconfig = config.dbconfig
+    dbconfig = config.config.dbconfig
 
     
 
@@ -721,8 +721,8 @@ def pyrebase_conn(data):
     
     def authenitcation():
         #authenticate a user
-        email = config.email
-        password = config.passport
+        email = config.config.email
+        password = config.config.passport
         #auth.create_user_with_email_and_password(email, password)
         #Get a reference to the auth service
         # Log the user in
@@ -746,6 +746,8 @@ def pyrebase_conn(data):
         # }
         
         
+        ## OJO differences between *.push(...) and *.set(...) !!!
+        
         db.child("fcc_subjects").push(data["fcc_subjects"], user['idToken'])
         
         db.child("plt_categories").push(data["plt_categories"], user['idToken'])
@@ -757,6 +759,8 @@ def pyrebase_conn(data):
             if record not in pt:
                 db.child("platformstable").child(record).push(dict([(x,y) for x,y in data["platformstable"][record].items() if x != "subjects"]), user['idToken'])
                 for s in data["platformstable"][record]['subjects']:
+                    if s == None:
+                        print('Subjects failed for ', pt)
                     db.child("platformstable").child(record).child('subjects').child(s).push(data["platformstable"][record]['subjects'][s], user['idToken'])
                 
         for i, record in enumerate(data["textstable"]):
@@ -794,6 +798,70 @@ def pyrebase_conn(data):
     datacreation(db, user, data)
 
 
+def pyrebase_manip(data):
+    #import firebase_admin
+    import pyrebase
+
+    dbconfig = config.config.dbconfig
+
+    
+
+    firebase = pyrebase.initialize_app(dbconfig)
+    
+    def authenitcation():
+        #authenticate a user
+        email = config.config.email
+        password = config.config.passport
+        #auth.create_user_with_email_and_password(email, password)
+        #Get a reference to the auth service
+        # Log the user in
+        auth = firebase.auth()
+        user = auth.sign_in_with_email_and_password(email, password)
+
+        return user
+    
+    
+    user = authenitcation()
+
+    # Get a reference to the database service
+    db = firebase.database()
+
+    def datacheck(db,*args):
+        child1 = args[0]
+        print(child1, args)
+        cont = []
+        if db.child(child1).get().val():
+            #print(db.child(child1).get().val())
+            #print(db.child(child1).get().val().keys())
+            for k in db.child(child1).get().val().keys():
+                #print(k)
+                cont.append(k)
+        return cont
+    
+    for rec in data['platformstable']:
+        if rec:
+            rec = 'ajax--googleapis--com'
+            if db.child('platformstable').child(rec):
+                #print(rec, db.child('platformstable').get().val().keys())
+                break
+    if db.child('platformstable').get().val():
+        print(db.child('platformstable').get().val().keys())
+    else:
+        print('None')
+        
+    #print(list(db.child(list(db.get().val().keys())[0]).child('ajax--googleapis--com').get().val().keys()))
+    print(list(db.child('platformstable').child('ajax--googleapis--com').get().val().keys()))
+    print(db.child('platformstable').child('ajax--googleapis--com').shallow().get().val())
+    #pt = datacheck(db,"platformstable")
+    #print('this is pt', pt)
+    
+    counter = 0
+    for rec in data['platformstable']:
+        if db.child('platformstable').child(rec).get().val().keys():
+            if 'subjects' not in list(db.child('platformstable').child(rec).get().val().keys()):
+                print(rec)
+    print(counter)
+    
 
 def html_tests(subject):
     
@@ -907,16 +975,16 @@ if __name__ == "__main__":
          {"id":"5695eb3e16b6c7089cc24e10","name":"FreeCodeCamp/HelpBackEnd"},
          {"id":"5695e9a116b6c7089cc24db5","name":"FreeCodeCamp/HelpJavaScript"},
          {"id":"5695eab116b6c7089cc24de2","name":"FreeCodeCamp/HelpFrontEnd"},
-    #     {"id":"54a2fa80db8155e6700e42c3","name":"FreeCodeCamp/Help"},
+         {"id":"54a2fa80db8155e6700e42c3","name":"FreeCodeCamp/Help"},
          ]
     
-    title = [
-            #freecodecamp2,
-            "helpbackend1",
-            "helpjavascript1",
-            "helpfrontend1",
-            #"help1",
-             ]
+    # title = [
+    #         #freecodecamp2,
+    #         #"helpbackend1",
+    #         #"helpjavascript1",
+    #         #"helpfrontend1",
+    #         #"help1",
+    #          ]
 
     # title = [
     #         #freecodecamp3,
@@ -924,7 +992,20 @@ if __name__ == "__main__":
     #         #"helpjavascript2",
     #         #"helpfrontend2",
     #         #"help2",
-    #          ]    
+    #          ]
+    
+    
+    title = [
+            "helpbackend1",
+            "helpfrontend1",
+            "helpjavascript1",
+            "help1",
+            "helpbackend2",
+            "helpfrontend2",
+            "helpjavascript2",
+            "help2"
+             ]
+ 
     
     #annotdata = '/data/annotatedplatformsphase1.csv'
     #annotdata = '/data/notatedplatformsphase1.csv'
@@ -980,6 +1061,7 @@ if __name__ == "__main__":
     etl_formattingsetstolists()
     ##temporary save!
     #pickle.dump(db['platformstable'], open(directory+'/annotatedlinks.pkl', 'bw'))
+    #pickle.dump(db, open(directory+'db.pkl','wb'))
     with open(os.getcwd()+notdata, 'w') as outfile:
         writer = csv.writer(outfile, delimiter=';', quotechar="'")
         writer.writerow(['platform','title','description','keywords','htext','params','category'])
@@ -1025,3 +1107,4 @@ if __name__ == "__main__":
     #calculating_total_subjectandcategories()
     ##projutilities.pyrebase_conn(db)
     #pyrebase_conn(db)
+    
