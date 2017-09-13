@@ -202,7 +202,7 @@ def bowcv_test():
     curriculum = pickle.load(open(directory+'/fcccurriculum.pkl','br'))
     bow = []
     cvlist = []
-    kk = ''
+    kk = ' '
     for k,v in sorted(curriculum.items(), key=operator.itemgetter(1)):
         k = ' '.join([w for w in k.split('-') if w not in wtbr])
         if k != subjects[1]:
@@ -620,6 +620,7 @@ def completing_db_with_data_from_botandcv(botdata):
 def calculating_total_subjectandcategories():
     '''
     db is global for this function
+    this is to automatically detect the unique names of categories assigned to urls
     ''' 
 
     cv, _ = bowcv_test()
@@ -637,6 +638,7 @@ def calculating_total_subjectandcategories():
 def etl_formattingsetstolists():
     '''
     db is global for this function
+    for some reason in previous codes I saved some data points as sets; this will transform sets into lists so they can be accepted by firebase
     ''' 
     for plt in db['platformstable']:
         for k in db['platformstable'][plt]:
