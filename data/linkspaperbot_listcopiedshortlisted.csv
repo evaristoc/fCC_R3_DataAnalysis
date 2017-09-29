@@ -1,0 +1,185 @@
+path,user,url
+"Learn web development, coding, entrepreneurship and design. arkmont.com",@heinhoang,https://arkmont.com/
+Learn Web Development - Web Development Course - Udemy www.udemy.com,@heinhoang,https://www.udemy.com/thecompletewebdeveloper/
+Async/Await Will Make Your Code Simpler blog.patricktriest.com,@puritanic,https://blog.patricktriest.com/what-is-async-await-why-should-you-care/
+Loading Animations by Florin Pop florin-pop.com,@florinpop17,http://florin-pop.com/blog/loading-animations
+"August, 2017: The Struggle, People & Gratitude - Bolu Ajibawo - Medium medium.com",@ajibs,https://medium.com/@Bolu_Ajibawo/august-2017-the-struggle-people-gratitude-eb9566f47fa0
+JavaScript Date Methods www.w3schools.com,@avidrutham,https://www.w3schools.com/js/js_date_methods.asp
+Date developer.mozilla.org,@avidrutham,https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+slackmetascraper www.npmjs.com,@vampiire,https://www.npmjs.com/package/slackmetascraper
+Machine Learning A-Z™: Hands-On Python & R In Data Science www.udemy.com,@oxyrus,https://www.udemy.com/machinelearning/
+Using GraphQL? Why Facebook Now Owns You 🐲 - Dennis Walsh - Medium medium.com,@iambonface,https://medium.com/@dwalsh.sdlr/using-graphql-why-facebook-now-owns-you-3182751028c9
+AngelList angel.co,"@jonathanjackson, @kornil",https://angel.co/
+"SEEK - Australia's no. 1 jobs, employment, career and recruitment site seek.com",@matthew-burfield,https://www.seek.com.au/
+Deep Learning | Coursera www.coursera.org,@pankaja,https://www.coursera.org/specializations/deep-learning
+Tips to learn React + Redux in 2017 - RWieruch www.robinwieruch.de,@lidiya,https://www.robinwieruch.de/tips-to-learn-react-redux/
+Gulp for Beginners | CSS-Tricks css-tricks.com,@paweltar,https://css-tricks.com/gulp-for-beginners/
+Template Literals | CSS-Tricks css-tricks.com,@shoesandsocks,https://css-tricks.com/template-literals/
+"This Is Responsive | Patterns and Resources for Responsive Web Design This Is Responsive | Tips, Resources and Patterns for Responsive Web Design bradfrost.github.io",@dianastanciu,http://bradfrost.github.io/this-is-responsive/index.html
+Learn Sass www.codecademy.com,@eureka,https://www.codecademy.com/learn/learn-sass
+"Mongoose API v4.11.9 function MongooseThenable (mongoose, promise) { var _this = this; for (var key in mongoose) { if (typeof mongoose[key] === 'function' && mongoose[key].$hasSideEffects) { (function(key) { _this[key] = function() { return mongoose[key].apply(mongoose, arguments); }; })(key); } else if (['connection', 'connections'].indexOf(key) !== -1) { _this[key] = mongoose[key]; } } this.$opPromise = promise; } MongooseThenable.prototype = new Mongoose; mongoosejs.com",@shoesandsocks,http://mongoosejs.com/docs/api.html
+What is git and why should I use it? www.quora.com,@jonathanjackson,https://www.quora.com/What-is-git-and-why-should-I-use-it
+papers-we-love/papers-we-love github.com,@reece,https://github.com/papers-we-love/papers-we-love
+"Lingvist: Learn French, German, Spanish and other languages lingvist.io",@lidiya,https://lingvist.com/
+Remote Work and Remote Jobs remote.com,@mbazhlekova,https://remote.com/preview/post/10-big-name-companies-that-are-hiring-remote-workers
+markerikson/react-redux-links github.com,@zyberg,https://github.com/markerikson/react-redux-links?files=1
+Grokking Algorithms: An illustrated guide for programmers and other curious people www.amazon.com,@jboxman,https://www.amazon.com/dp/1617292230/_encoding=UTF8?amp;colid=RIQPR81NNWLB&coliid=I1DOUHMRO49XFD
+https://af-quotes-api.herokuapp.com af-quotes-api.herokuapp.com,@amanfojnr,https://af-quotes-api.herokuapp.com/
+How to Dockerize a Node.js application - Hacker Noon hackernoon.com,@joshmorel,https://hackernoon.com/how-to-dockerize-a-node-js-application-4fbab45a0c19
+"Tryit Editor v3.5 If you click the save button, your code will be saved, and you get an URL you can share with others. www.w3schools.com",@nemesis1311,https://www.w3schools.com/js/tryit.asp?filename=tryjs_loop_for
+How we brought a new App to life help web-dev learners - devGaido medium.com,@chance,https://www.w3schools.com/js/tryit.asp?filename=tryjs_loop_for
+$max (aggregation) - MongoDB Manual 3.4 docs.mongodb.com,@marigerr,https://docs.mongodb.com/manual/reference/operator/aggregation/max/
+"Adding an existing project to GitHub using the command line - User Documentation Putting your existing work on GitHub can let you share and collaborate in lots of great ways. If you are migrating your project from CodePlex, read the migration guide for more information. Warning: Never git add, commit, or push sensitive information to a remote repository. help.github.com",@vannya,https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+"Importing a Git repository using the command line - User Documentation If [GitHub Importer](/articles/importing-a-repository-with-github-importer) is not suitable for your purposes, such as if your existing code is hosted on a private network, then we recommend importing using the command line. ... help.github.com",@vannya,https://help.github.com/articles/importing-a-git-repository-using-the-command-line/
+Two common errors with APIs that use location codepen.io,@vampiire,https://codepen.io/skycoder/post/apisandlocation
+Mocking passport githubStrategy for functional testing medium.com,@jboxman,https://medium.com/chingu/mocking-passport-githubstrategy-for-functional-testing-33e7ed4f9aa3
+Test your passport authentication protected routes with tape and supertest medium.com,@jboxman,https://medium.com/chingu/mocking-passport-githubstrategy-for-functional-testing-33e7ed4f9aa3
+E-book: Select a JavaScript Framework softwareengineeringdaily.com,@joshmorel,https://www.grapecity.com/en/wijmo
+Redux for state management in large web apps - Points of interest blog.mapbox.com,@jboxman,https://blog.mapbox.com/redux-for-state-management-in-large-web-apps-c7f3fab3ce9b
+h5bp/html5-boilerplate github.com,@metazor,https://github.com/h5bp/html5-boilerplate
+How to GraphQL - The Fullstack Tutorial for GraphQL www.howtographql.com,@spences10,https://www.howtographql.com/
+JS: The Right Way jstherightway.org,@heinhoang,http://jstherightway.org/
+Master all PHP ideas 2017 to build any project - Udemy www.udemy.com,@heinhoang,https://www.udemy.com/master-all-php-ideas-2017-to-build-any-project/?couponCode=PHP-ANK-NEW
+GitHub Student Developer Pack education.github.com,@rameshsyn,https://education.github.com/pack
+Apply for AWS Educate aws.amazon.com,@rameshsyn,https://aws.amazon.com/education/awseducate/apply/
+tldr-pages/tldr github.com,@metazor,https://github.com/tldr-pages/tldr
+DigitalOcean: Cloud computing designed for developers m.do.co,@joshmorel,https://www.digitalocean.com/?refcode=3771f53d9602&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=CopyPaste
+Visual input turned into powerful medical insight healthy.io,@peoray,https://healthy.io/
+Get started with Docker Compose docs.docker.com,@joshmorel,https://docs.docker.com/compose/gettingstarted/
+Remote Jobs for Juniors and Graduates - Remote Junior remotejunior.com,@mbazhlekova,https://remotejunior.com/
+W3Schools Online Web Tutorials www.w3schools.com,@lishkon,https://www.w3schools.com/
+Contributing to your First Open Source Project: A Practical Approach blog.devcenter.co,@iambonface,https://blog.devcenter.co/contributing-to-your-first-open-source-project-a-practical-approach-1928c4cbdae
+you don't know js: free download. Ebooks library. On-line books store on Z-Library you don't know js: free download. Ebooks library. On-line books store on Z-Library | B-OK. Download books for free. Find books b-ok.org,@adeyinka,http://b-ok.org/s/?amp;extension=&amp;language=&amp;t=0&amp;yearFrom=&amp;yearTo=&q=you%20don%27t%20know%20js
+Coding Boot Camp Closures Prove There Are No Shortcuts in Education www.slate.com,@bresil,http://www.slate.com/articles/technology/future_tense/2017/08/coding_boot_camp_closures_prove_there_are_no_shortcuts_in_education.html
+"After phishing attacks, Chrome extensions push adware to millions arstechnica.com",@iambonface,https://arstechnica.com/information-technology/2017/08/after-phishing-attacks-chrome-extensions-push-adware-to-millions/
+StackBlitz - Online VS Code IDE for Angular & React ⚡ medium.com,@mariombaltazar,https://medium.com/@ericsimons/stackblitz-online-vs-code-ide-for-angular-react-7d09348497f4
+Flexbox Defense www.flexboxdefense.com,@lishkon,http://www.flexboxdefense.com/
+"CSS Cheat Sheet | OverAPI.com OverAPI.com is a site collecting all the cheatsheets,all! overapi.com",@lishkon,http://overapi.com/css
+Messenger Bots: Decision Trees vs Webviews - Mikhail Larionov - Medium medium.com,@natalka1122,https://medium.com/@vernon99/messenger-bots-decision-trees-vs-webviews-64b36eb0905e
+There are a dozen ways to order a coffee. Why do dumb bots only allow one? medium.com,@natalka1122,https://medium.com/assist/theres-a-dozen-ways-to-order-a-coffee-why-do-dumb-bots-only-allow-one-27230542636d
+"Chrome extension ""Web Developer"" has been compromised * r/webdev www.reddit.com",@marigerr,https://www.reddit.com/r/webdev/comments/6r4te5/chrome_extension_web_developer_has_been/
+Reactive Programming with RxJS 5: Untangle Your Asynchronous JavaScript Code by Sergi Mansilla | The Pragmatic Bookshelf pragprog.com,@bresil,https://pragprog.com/book/smreactjs5/reactive-programming-with-rxjs-5
+The Pragmatic Bookshelf pragprog.com,@bresil,https://pragprog.com/
+Manning | RxJS in Action www.manning.com,@bresil,https://www.manning.com/books/rxjs-in-action
+WatchMeCode - Node.js and JavaScript Screencasts for Back-End Developers sub.watchmecode.net,@benjaminadk,https://sub.watchmecode.net/
+"Specificity Calculator Specificity Calculator isn't a CSS validator. If you enter invalid selectors it will return incorrect results. For example, the negation pseudo-class may only take a simple selector as an argument. Using a pseudo-element or combinator as an argument for :not() is invalid CSS3 so Specificity Calculator will return incorrect results. specificity.keegan.st",@serhii.css,https://specificity.keegan.st/
+Getting to Know CSS - Learn to Code HTML & CSS learn.shayhowe.com,@jenovs,http://learn.shayhowe.com/html-css/getting-to-know-css/
+"Work Better, Together | donut.ai www.donut.ai",@lishkon,https://www.donut.ai/
+Khan Academy www.khanacademy.org,@srithasriram30,www.khanacademy.org
+Weather Icons - 222 font icons inspired by Font Awesome and designed for Bootstrap Please note: Weather Icons is no longer maintained or updated here. the project is currently looking for a new owner who wants to bear the responsibility. Feel free to let me know. erikflowers.github.io,@staxed,https://erikflowers.github.io/weather-icons/
+Flaticon www.flaticon.com,@jneidel,https://www.flaticon.com/search?word=weather
+The beginners guide to React Native and Firebase firebase.googleblog.com,@chemok78,https://firebase.googleblog.com/2016/01/the-beginners-guide-to-react-native-and_84.html
+CodeAbbey - a place where everyone can master programming www.codeabbey.com,@lidiya,http://www.codeabbey.com/
+About - Project Euler projecteuler.net,@lidiya,https://projecteuler.net/
+Codewars: Train your coding skills www.codewars.com,@dianastanciu,https://www.codewars.com/
+Collect UI collectui.com,@lidiya,http://collectui.com/designs
+Live Server Preview - Visual Studio Marketplace marketplace.visualstudio.com,@spences10,https://marketplace.visualstudio.com/items?itemName=negokaz.live-server-preview
+Live Server - Visual Studio Marketplace marketplace.visualstudio.com,@spences10,https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+slick - the last carousel you'll ever need kenwheeler.github.io,@nat,http://kenwheeler.github.io/slick/
+Documentation of Trumbowyg : a lightweight WYSIWYG editor | Alex-D / Alexandre Demode Trumbowyg is a jQuery plugin for create WYSIWYG editor alex-d.github.io,@ksmai,https://alex-d.github.io/Trumbowyg/documentation/
+RESTful API Design With NodeJS & Restify code.tutsplus.com,@leofis,https://code.tutsplus.com/tutorials/restful-api-design-with-nodejs-restify--cms-22637
+Create a Web App and RESTful API Server Using the MEAN Stack | Heroku Dev Center devcenter.heroku.com,@chemok78,https://devcenter.heroku.com/articles/mean-apps-restful-api
+The Aaron Massey Project | 180 Websites aaronmassey.pro,@swolepapi,http://aaronmassey.pro/
+Responsive Web Design Fundamentals | Udacity www.udacity.com,@lishkon,https://www.udacity.com/course/responsive-web-design-fundamentals--ud893
+The 4 most in-demand programming languages www.creativebloq.com,@piotr,http://www.creativebloq.com/advice/the-4-most-in-demand-programming-languages
+Socket.IO socket.io,@aaerion,https://socket.io/
+Top 5 Tutorials for Getting Started with React andrewhfarmer.com,@aaerion,http://andrewhfarmer.com/getting-started-tutorials/
+HackerRank www.hackerrank.com,@mariombaltazar,www.hackerrank.com
+The Road to learn React leanpub.com,@jenovs,https://leanpub.com/the-road-to-learn-react
+Hot Spot for Tech Outsourcing: The United States www.nytimes.com,@jboxman,https://www.nytimes.com/2017/07/30/technology/hot-spot-for-tech-outsourcing-the-united-states.html
+CSS Image Sprites www.w3schools.com,@skrishn5,https://www.w3schools.com/css/css_image_sprites.asp
+Group Screen Sharing blog.screenhero.com,@pai,http://blog.screenhero.com/post/110558292401/group-screen-sharing
+Dribbble - Show and tell for designers dribbble.com,@lidiya,https://dribbble.com/
+Try Git try.github.io,@jonathanjackson,https://try.github.io/levels/1/challenges/1
+Represent - A better way to résumé represent.io,@skrishn5,https://represent.io/
+Try Git try.github.io,@jonathanjackson,https://try.github.io/levels/1/challenges/1
+Git - git-pull Documentation git-scm.com,@sipofwater,https://git-scm.com/docs/git-pull
+Represent - A better way to résumé represent.io,@gmunker,https://represent.io/
+Git - git-branch Documentation git-scm.com,@sipofwater,https://git-scm.com/docs/git-branch
+Using CORS - HTML5 Rocks www.html5rocks.com,@skrishn5,https://www.html5rocks.com/en/tutorials/cors/
+Firebase Pricing firebase.google.com,@oxyrus,https://firebase.google.com/pricing/
+Okanagan workers earn less - Kelowna News www.castanet.net,@sipofwater,https://web.paperbot.ai/links/1069264?ref=teamfeed
+Introduction - hyperledger-fabricdocs master documentation hyperledger-fabric.readthedocs.io,@ishanjain28,http://hyperledger-fabric.readthedocs.io/en/latest/blockchain.html
+dexteryy/spellbook-of-modern-webdev github.com,@metazor,https://github.com/dexteryy/spellbook-of-modern-webdev
+The Recipe Box - All recipes therecipebox.com,@sipofwater,http://therecipebox.com/
+Code Viewer. Source code: src/3.model_loading/1.model_loading/model_loading.cpp learnopengl.com,@oxyrus,https://learnopengl.com/code_viewer_gh.php?code=src/3.model_loading/1.model_loading/model_loading.cpp
+cool-ascii-faces www.npmjs.com,@joshmorel,https://www.npmjs.com/package/cool-ascii-faces
+Creating a Slack Command Bot from Scratch with Node.js & Distribute It www.girliemac.com,@lydiavuj,http://www.girliemac.com/blog/2016/10/24/slack-command-bot-nodejs/
+Strava | Run and Cycling Tracking on the Social Network for Athletes strava.com,@natalka1122,https://www.strava.com/
+"Strava API Reference The Strava V3 API is a publicly available interface allowing developers access to the rich Strava dataset. The interface is stable and currently used by the Strava mobile applications. However, changes are occasionally made to improve performance and enhance features. See the changelog for more details. strava.github.io",@natalka1122,https://strava.github.io/api/
+MongoDB University university.mongodb.com,@oxyrus,https://university.mongodb.com/
+How to test a REST api from command line with curl www.codingpedia.org,@bresil,http://www.codingpedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/
+Calendly - Scheduling appointments and meetings is super easy with Calendly. calendly.com,@heggyhere,https://calendly.com/
+How to debug ES6 NodeJS with VSCode - katopz - Medium medium.com,@staxed,https://medium.com/@katopz/how-to-debug-es6-nodejs-with-vscode-8d00bd6c4f94
+How to not f- up your local files with Git part 1 - Francesco Agnoletto - Medium medium.com,@kornil,https://medium.com/@francesco.agnoletto/how-to-not-f-up-your-local-files-with-git-part-1-e0756c88fd3c
+Free Learning - Free Technology eBooks | PACKT Books www.packtpub.com,@joshmorel,https://www.packtpub.com/packt/offers/free-learning
+https://www.gravit.io www.gravit.io,@osycon,https://www.gravit.io/
+"Resolving a merge conflict using the command line - User Documentation Merge conflicts may occur if competing changes are made to the same line of a file or when a file is deleted that another person is attempting to edit. For information on how to resolve these situations, see "" Competing line change merge conflicts and "" Removed file merge conflicts."" help.github.com",@sipofwater,https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/
+"Dear Slack, Get over Microsoft. You have a bigger problem. hackernoon.com",@similedude,https://hackernoon.com/dear-slack-get-over-microsoft-you-have-a-bigger-problem-7e2e3723c877
+"Packt Publishing | Technology Books, eBooks & Videos | packtpub.com",@wjhurley,https://www.packtpub.com/
+Jeff Bezos is set to become the world's richest man www.cnbc.com,@sipofwater,https://www.cnbc.com/2017/07/27/jeff-bezos-is-set-to-become-the-worlds-richest-man.html
+Free Learning - Free Technology eBooks | PACKT Books www.packtpub.com,@srithasriram30,https://www.packtpub.com/packt/offers/free-learning
+Slack Webhook Integration Example | API.AI api.ai,@heggyhere,https://api.ai/docs/examples/slack-webhook
+"Command Line, Terminal, & GitHub - Let's make it really simple medium.com",@lydiavuj,https://medium.com/career-change-coder/command-line-terminal-github-lets-make-it-really-simple-b47280341354
+Researchers shut down AI that invented its own language www.digitaljournal.com,@lydiavuj,http://www.digitaljournal.com/tech-and-science/technology/a-step-closer-to-skynet-ai-invents-a-language-humans-can-t-read/article/498142
+Creddle creddle.io,@wildlifehexagon,http://creddle.io/
+Represent - A better way to résumé represent.io,@marioc3,https://represent.io/
+List of Tips | The Pragmatic Bookshelf pragprog.com,@Pengo,https://pragprog.com/the-pragmatic-programmer/extracts/tips
+datacard datacard.io,@heggyhere,http://datacard.io/
+Squash your commits github.com,@joshmorel,https://github.com/blog/2141-squash-your-commits
+Bitrise - Mobile Continuous Integration and Delivery www.bitrise.io,@chemok78,https://www.bitrise.io/pricing
+Free Learning - Free Technology eBooks | PACKT Books www.packtpub.com,@srithasriram30,https://www.packtpub.com/packt/offers/free-learning
+React Native Basics: Build a Currency Converter learn.handlebarlabs.com,@similedude,http://learn.handlebarlabs.com/p/react-native-basics-build-a-currency-converter
+Node with React: Fullstack Web Development - Udemy www.udemy.com,@wildlifehexagon,https://www.udemy.com/node-with-react-fullstack-web-development/
+Hyper™ hyper.is,@ibrahim,https://hyper.is/
+Sublime Material Theme - Visual Studio Marketplace marketplace.visualstudio.com,@mike-ike,https://marketplace.visualstudio.com/items?itemName=jprestidge.theme-material-theme
+Agile | Boost Blog www.boost.co.nz,@mmadden,http://www.boost.co.nz/blog/agile.html
+VSCode intelliSense autocomplete for javascript stackoverflow.com,@jneidel,https://stackoverflow.com/questions/30793337/vscode-intellisense-autocomplete-for-javascript
+JavaScript IntelliSense msdn.microsoft.com,@jneidel,https://msdn.microsoft.com/en-us/library/bb385682.aspx
+Course | DEV203x | edX courses.edx.org,@alexever17,https://courses.edx.org/courses/course-v1%3AMicrosoft%2BDEV203x%2B2T2017/course/
+Terminal in React JS dev.to,@zamhaq,https://dev.to/ntulswani/terminal-in-react-js
+Zeplin zeplin.io,@paweltar,https://zeplin.io/
+"Avocode - PSD & Sketch designs to web, iOS and Android code avocode.com",@paweltar,https://avocode.com/
+"The eigenvector of ""Why we moved from language X to language Y"" erikbern.com",@ishanjain28,https://erikbern.com/2017/03/15/the-eigenvector-of-why-we-moved-from-language-x-to-language-y.html
+Font Pair - Helps designers pair Google Fonts together. Beautiful Google Font combinations and pairs. Font Pair helps designers pair Google Fonts together. Beautiful Google Font combinations and pairs. fontpair.co,@umiii,http://fontpair.co/
+Free Learning - Free Technology eBooks | PACKT Books www.packtpub.com,@srithasriram30,https://www.packtpub.com/packt/offers/free-learning
+https://cors-everywhere.herokuapp.com cors-everywhere.herokuapp.com,@freddydumont,https://cors-everywhere.herokuapp.com/
+Web & Mobile App Design and Development Company | Cheesecake Labs cheesecakelabs.com,@douglasgimli,https://cheesecakelabs.com/
+Is it time to drop jQuery? Essentials to learning JavaScript from a jQuery background toddmotto.com,@belcurv,https://toddmotto.com/is-it-time-to-drop-jquery-essentials-to-learning-javascript-from-a-jquery-background/
+How To Get Six Months Pluralsight Free Subscription devopscube.com,@staxed,https://devopscube.com/pluralsight-free-subscription/
+Grab yourself a gradient www.grabient.com,@marcosjr182,https://www.grabient.com/
+Introduction to React survivejs.com,@reub,https://survivejs.com/react/getting-started/introduction-to-react/
+Introduction · React Enlightenment www.reactenlightenment.com,@reub,https://www.reactenlightenment.com/
+"Hacking with React - Learn React programming using React Router, Jest and ES6 Free React tutorials by example www.hackingwithreact.com",@reub,http://www.hackingwithreact.com/
+Now there's a real animal named Totoro! www.dramafever.com,@lydiavuj,https://www.dramafever.com/news/now-theres-a-real-animal-named-totoro/
+now zeit.co,@matthew-burfield,https://zeit.co/now
+WEB_GENERAL - Google Drive drive.google.com,@chykrinks,https://drive.google.com/drive/folders/0ByWO0aO1eI_MZWp3ZlVzVnNsNEU
+SoloLearn: Learn to Code for Free - Android Apps on Google Play play.google.com,@rishabh,https://play.google.com/store/apps/details?id=com.sololearn
+Contributing to your First Open Source Project: A Practical Approach blog.devcenter.co,@alexever17,https://blog.devcenter.co/contributing-to-your-first-open-source-project-a-practical-approach-1928c4cbdae
+"Check Browser Compatibility, Cross Platform Browser Test - Browsershots Check Browser Compatibility, Cross Platform Browser Test www.browsershots.org",@jdmedlock,http://browsershots.org/
+Data Sketches 20 minutes of tech tooling talk every Tuesday at 2 with Chris Dhanaraj and Una Kravets. www.toolsday.io,@redrocket,http://www.toolsday.io/episodes/datasketches.html
+Plotting our drinks - Front End Happy Hour frontendhappyhour.com,@redrocket,http://frontendhappyhour.com/episodes/plotting-our-drinks/
+25+ Resources to Learn D3.js from Scratch blog.modeanalytics.com,@staxed,https://web.paperbot.ai/links/994875?ref=teamfeed
+Brainbuffet.com | The Birthplace of Awesome brainbuffet.com,@jonathanjackson,https://brainbuffet.com/
+App Store Marketing Guidelines - Apple Developer developer.apple.com,@oxyrus,https://developer.apple.com/app-store/marketing/guidelines/
+Duolingo Bots | Learn a Language with Conversational Bots bots.duolingo.com,@alexever17,http://bots.duolingo.com/
+Enable Autocorrect on Your Desktop with Chrome lifehacker.com,@trion,https://lifehacker.com/enable-autocorrect-on-your-desktop-with-chrome-1491554790
+Everybody or everyone? | Ask The Editor | Learner's Dictionary www.learnersdictionary.com,@alexever17,http://www.learnersdictionary.com/qa/everybody-or-everyone
+Everyone vs. Every One? www.grammarly.com,@lydiavuj,https://www.grammarly.com/blog/everyone-vs-every-one/
+PrtScr about www.fiastarta.com,@luisjaquez,http://www.fiastarta.com/PrtScr/
+webpack: The Core Concepts webpack.academy,@spences10,https://webpack.academy/p/the-core-concepts
+Digital Marketing Course - Google Online Marketing Challenge www.google.com,@mcne65,https://www.google.com/onlinechallenge/dmc/
+The Data That Turned the World Upside Down motherboard.vice.com,@aseem,https://motherboard.vice.com/en_us/article/mg9vvn/how-our-likes-helped-trump-win
+Web Field Manual | Latest webfieldmanual.com,@serhii.css,https://webfieldmanual.com/
+The most insightful stories about Motivation - Medium medium.com,@serhii.css,https://medium.com/tag/motivation
+Free Learning - Free Technology eBooks | PACKT Books www.packtpub.com,@sipofwater,https://www.packtpub.com/packt/offers/free-learning
+E-Library | Okanagan Regional Library (ORL) Browse our online e-library resources available to members of the Okanagan Regional Library (ORL). www.orl.bc.ca,@sipofwater,http://www.orl.bc.ca/elibrary
+"Learn to code HTML, CSS, and JavaScript with Dash Dash is a fun and free online course from General Assembly that teaches you how to program with the basics of web development through projects you can do right in your browser. Get started today! dash.generalassemb.ly",@wildlifehexagon,https://dash.generalassemb.ly/
+"Learn to Code HTML & CSS - Beginner & Advanced Learn to Code HTML & CSS has one goal - to teach people how to build beautiful and intuitive websites by way of clear and organized lessons. The guide covers a variety of web design and development topics, ranging from beginner to advanced skill levels. learn.shayhowe.com",@wildlifehexagon,http://learn.shayhowe.com/
+Valera Kushnir - Don't be a know it all; be a learn it all. valerakushnir.com,@valera,https://valerakushnir.com/
+What The Flexbox?! flexbox.io,@joshmorel,https://flexbox.io/
+How the Web Became Unreadable www.wired.com,@jenovs,https://www.wired.com/2016/10/how-the-web-became-unreadable
+"Cheerio Cheerio will not solve all your problems. I would still use JSDOM if I needed to work in a browser-like environment on the server, particularly if I wanted to automate functional tests. cheerio.js.org",@chemok78,https://cheerio.js.org/
+Wox www.getwox.com,@mbazhlekova,http://www.getwox.com/
+Free Learning - Free Technology eBooks | PACKT Books www.packtpub.com,@sipofwater,https://www.packtpub.com/packt/offers/free-learning
+Codeanywhere codeanywhere.com,@jneidel,https://codeanywhere.com/
