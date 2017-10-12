@@ -1,0 +1,89 @@
+<html>
+<head>
+  <title>Comparing labels</title>
+  <meta charset="utf-8" />
+  <script src="//d3js.org/d3.v4.min.js"></script>
+
+</head>
+<style>
+.node circle {
+  fill: #999;
+}
+
+.node text {
+  font: 15px sans-serif;
+}
+
+.node--internal circle {
+  fill: #555;
+}
+
+.node--internal text {
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
+
+.link {
+  fill: none;
+  stroke: #555;
+  stroke-opacity: 0.4;
+  stroke-width: 1.5px;
+}
+</style>
+<body>
+
+<div id="container">
+  <svg id="ukwa" width="600" height="600">
+  </svg>
+  <svg id="fcc" width="600" height="600">
+  </svg>
+  <div id="graph"></div>
+</div>
+</body>
+<script>
+function generateDendogram(selector, data){
+    var svg = d3.select(selector),
+        width = +svg.attr("width"),
+        height = +svg.attr("height"),
+        g = svg.append("g").attr("transform", "translate(100,0)");
+
+    var arvore = d3.tree().size([height, width - 500]);
+
+    d3.json(data, function(error, data){
+      if (error) throw error;
+
+      var root = d3.hierarchy(data, d => d.children);
+      arvore(root);
+
+      var link = g.selectAll(".link")
+          .data(root.descendants().slice(1))
+        .enter().append("path")
+          .attr("class", "link")
+          .attr("d", function(d) {
+            return "M" + d.y + "," + d.x
+                + "C" + (d.parent.y + 10) + "," + d.x
+                + " " + (d.parent.y + 10) + "," + d.parent.x
+                + " " + d.parent.y + "," + d.parent.x;
+          });
+
+      var node = g.selectAll(".node")
+          .data(root.descendants())
+          .enter().append("g")
+          .attr("class", d => "node" + (d.children ? " node--internal" : " node--leaf"))
+          .attr("transform", d => "translate(" + d.y + "," + d.x + ")");
+
+      node.append("circle")
+          .attr("r", 2.5);
+
+      node.append("text")
+          .attr("dy", 7)
+          .attr("x", d => d.children ? -8 : 8)
+          .style("text-anchor",d => d.children ? "end" : "start")
+          .text(d => d.data.name);
+
+    })
+  }
+
+  generateDendogram("#ukwa","categories_UKWA.json");
+  generateDendogram("#fcc","categories_fcc.json");
+</script>
+</html>
