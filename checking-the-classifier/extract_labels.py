@@ -19,7 +19,7 @@ def extractLabelsUKWA(dir):
         for category,size in categories.items():
             output_dict.append({"size":size,"name":category})
 
-        with open("categories_UKWA_teste.json", "w") as fp:
+        with open("data/categories_UKWA_teste.json", "w") as fp:
             json.dump(output_dict, fp)
 
 
@@ -44,6 +44,6 @@ def extractLabels(file_dir, output_dir, category_row_id, delimiter):
 
 
 if __name__ == '__main__':
-    extractLabelsUKWA('classification_UKWA.tsv')
-    extractLabels('category_operationalization.csv', 'categories_fcc.json',0,":")
-    extractLabels('../learn_anything_urls/learn-anything_urls.csv', 'categories_learn_anything.json',1,",")
+    extractLabelsUKWA('data/classification_UKWA.tsv')
+    extractLabels('data/category_operationalization.csv', 'data/categories_fcc.json',0,":")
+    extractLabels('../learn_anything_urls/learn-anything_urls.csv', 'data/categories_learn_anything.json',1,",")
