@@ -38,7 +38,6 @@ def getHostname(url):
 if __name__ == '__main__':
     fcc_hostnames = extractUrls('data/good_rows_fcc.csv', 2, ',')
     ukwa_hostnames = extractUrls('data/classification_UKWA.tsv', 3,'\t')
-    learn_anything_hostnames = extractUrls('../learn_anything_urls/learn-anything_urls.csv', 8, ',')
+    learn_anything_hostnames = extractUrls('./learn_anything_urls/learn-anything_urls.csv', 8, ',')
     print("Same hostnames fCC UKWA", list(set(fcc_hostnames) & set(ukwa_hostnames)))
     print("Same hostnames fCC learn-anything", list(set(fcc_hostnames) & set(learn_anything_hostnames)))
-    pprint(learn_anything_hostnames)
