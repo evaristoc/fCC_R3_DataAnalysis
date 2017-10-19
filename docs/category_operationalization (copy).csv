@@ -1,0 +1,14 @@
+category:category_regex:definition
+ECOMMERCE:shop|commerce:e-Commerce platforms
+COMMUNITY:community|support|people|forum':platforms where people can exchange information, Q&A platforms
+REPL:(text )?editor|interpreter|repl:editors, converters, calculators and things that transform data inputs into a different format
+TRAINING:learn|tutorial|course|training| tips|example: unpersonalised platforms that offer a systematic, progressive, continue and specific learning program, or platforms that host those program
+WRCOTENT:blog|media|news|articl|content|post|journal:written content; CMS or any other platform to post articles; books or list of books offered for free; if offering tutorials, those are not organised in a systematic, progressive format, can be about different topics and offer room for unrelated content
+PACKAGE:api|package|framework|librar|stack|licens|addon|app:pages about API, libraries, etc; including main land pages where the resource is described and even some documentation
+THEME:design|galler|template|theme:platforms which content consists on the offer of templates and similar
+PAAS:cloud|platform|service:mostly PaaS or similar
+BUSINESS:on?(-|\s)?demand|business|compan(y|ies)|enterprise:when referring to companies, associations or organisations of people offering services/products, but not e-commerce or PaaS/SaaS services
+DOCS:manual|guide|docs:material oriented to instruct developers in the use of a technology; manifestos, protocols, etc
+SENGINE:search tools: search engine tools or pages used to search EXTERNAL resources, not registered in owned databases
+NOCLASS:---: 
+REVIEWS:review:comparisons, ratings, listing

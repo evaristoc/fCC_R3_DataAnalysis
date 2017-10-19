@@ -467,3 +467,19 @@ for k in dbp:
 #         if dbp[k]['origurl'] in list(newdatadict.keys()):
 #             for t in newdatadict[dbp[k]['origurl']]['text_paperbot']:
 #                 dbp[k]['htext'] = t + ' '
+
+###
+#pickle.dump(dbp, open(directory+'dbp2.pkl','wb'))
+
+
+with open(datadirectory+'/notatedplatformsphase1_a7.csv', 'w') as outfile:
+    writer = csv.writer(outfile, delimiter=";", quotechar="'")
+    writer.writerow(["platform","title","description","keywords","htext","params","category","wiki"])
+    for k in dbp:
+        if dbp[k]["category"] == None:
+            if isinstance(dbp[k]['params'], set):
+                p = ''
+                for e in dbp[k]['params']:
+                    p = e + ' ' 
+            writer.writerow([dbp[k]["origurl"],dbp[k]["title"],dbp[k]["description"],dbp[k]["keywords"],dbp[k]["htext"],p,'',''])
+            
