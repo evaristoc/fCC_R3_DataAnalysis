@@ -32,11 +32,12 @@
 <body>
 
 <div id="container">
-  <svg id="ukwa" width="600" height="600">
+  <svg id="ukwa" width="400" height="500">
   </svg>
-  <svg id="fcc" width="600" height="600">
+  <svg id="fcc" width="400" height="500">
   </svg>
-  <div id="graph"></div>
+  <svg id="learn_anything" width="400" height="500">
+  </svg>
 </div>
 </body>
 <script>
@@ -44,9 +45,9 @@ function generateDendogram(selector, data){
     var svg = d3.select(selector),
         width = +svg.attr("width"),
         height = +svg.attr("height"),
-        g = svg.append("g").attr("transform", "translate(100,0)");
+        g = svg.append("g").attr("transform", "translate(150,0)");
 
-    var arvore = d3.tree().size([height, width - 500]);
+    var arvore = d3.tree().size([height, width - 300]);
 
     d3.json(data, function(error, data){
       if (error) throw error;
@@ -85,5 +86,6 @@ function generateDendogram(selector, data){
 
   generateDendogram("#ukwa","categories_UKWA.json");
   generateDendogram("#fcc","categories_fcc.json");
+  generateDendogram("#learn_anything","categories_learn_anything.json");
 </script>
 </html>
